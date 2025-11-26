@@ -46,14 +46,18 @@ class Client {
             std::cout << "Creation of a current account (1), unblocked savings account (2), or blocked savings account (3)? ";
             int choice;
             std::cin >> choice;
+            unsigned int accountId;
             switch(choice){
                 case 1:
-                    accounts[currentAccounts++] = new CurrentAccount(id);
+                    accountId = id * 100 + currentAccounts;
+                    accounts[currentAccounts++] = new CurrentAccount(accountId);
                     break;
                 case 2:
-                    accounts[currentAccounts++] = new UnblockedAccount(id);
+                    accountId = id * 1000 + currentAccounts;
+                    accounts[currentAccounts++] = new UnblockedAccount(accountId);
                     break;
                 case 3:
+                    accountId = id * 10000 + currentAccounts;
                     accounts[currentAccounts++] = new BlockedAccount(id);
                     break;
                 default:
