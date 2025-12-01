@@ -49,7 +49,7 @@
 - `sudo apt update` (if necessary)
 - `sudo apt install -y doxygen graphviz` (if necessary)
 - `make docs `
-- `xdg-open docs/html/index.html`
+- `firefox docs/html/index.html`
 ]
 
 = Exercise 1

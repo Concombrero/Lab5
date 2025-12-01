@@ -12,7 +12,7 @@
 using namespace std;
 
 int main() {
-    ofstream outputFile("output.txt");
+    ofstream outputFile("bin/output.txt");
     
     if (!outputFile.is_open()) {
         cerr << "Error opening file!" << endl;
