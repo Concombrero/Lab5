@@ -1,0 +1,111 @@
+\doxysection{code/src/main\+\_\+ex12.cpp File Reference}
+\hypertarget{main__ex12_8cpp}{}\label{main__ex12_8cpp}\index{code/src/main\_ex12.cpp@{code/src/main\_ex12.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include "{}bank.\+hpp"{}}\newline
+{\ttfamily \#include "{}client.\+hpp"{}}\newline
+Include dependency graph for main\+\_\+ex12.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{main__ex12_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main__ex12_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main__ex12_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main__ex12_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main\_ex12.cpp@{main\_ex12.cpp}!main@{main}}
+\index{main@{main}!main\_ex12.cpp@{main\_ex12.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{main__ex12_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{main__ex12_8cpp_source}{main\+\_\+ex12.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00015\ \ \ \ \ ofstream\ outputFile(\textcolor{stringliteral}{"{}bin/output.txt"{}});}
+\DoxyCodeLine{00016\ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordflow}{if}\ (!outputFile.is\_open())\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error\ opening\ file!"{}}\ <<\ endl;}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1;}
+\DoxyCodeLine{00020\ \ \ \ \ \}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classBank}{Bank}}\ my\_bank;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//\ Smith}}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{classClient}{Client}}\ smith(\textcolor{stringliteral}{"{}Smith"{}},\ 1234,\ 10);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Creation\ of\ accounts\ for\ Smith:"{}}\ <<\ endl;}
+\DoxyCodeLine{00028\ \ \ \ \ outputFile\ <<\ \textcolor{stringliteral}{"{}Creation\ of\ accounts\ for\ Smith:"{}}\ <<\ endl;}
+\DoxyCodeLine{00029\ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ smith.createAccount();}
+\DoxyCodeLine{00031\ \ \ \ \ smith.credit(0,\ 1000.0);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ smith.createAccount();}
+\DoxyCodeLine{00034\ \ \ \ \ smith.credit(1,\ 2000.0);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ smith.createAccount();}
+\DoxyCodeLine{00037\ \ \ \ \ smith.credit(2,\ 3000.0);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ smith.debit(1,\ 100.0);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ my\_bank.\mbox{\hyperlink{classBank_a1fd6ab6aba6e9b5378aec019bcb79738}{insertClient}}(smith);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ outputFile\ <<\ endl\ <<\ \textcolor{stringliteral}{"{}-\/-\/-\/\ Final\ Bank\ Status\ -\/-\/-\/"{}}\ <<\ endl;}
+\DoxyCodeLine{00044\ \ \ \ \ outputFile\ <<\ my\_bank\ <<\ endl;}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{//\ Emma}}
+\DoxyCodeLine{00048\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nCreation\ of\ Accounts\ for\ Emma:"{}}\ <<\ endl;}
+\DoxyCodeLine{00049\ \ \ \ \ outputFile\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nCreation\ of\ Accounts\ for\ Emma:"{}}\ <<\ endl;}
+\DoxyCodeLine{00050\ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{classClient}{Client}}\ emma(\textcolor{stringliteral}{"{}Emma"{}},\ 5678,\ 5);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ emma.createAccount();}
+\DoxyCodeLine{00054\ \ \ \ \ emma.credit(0,\ 500.0);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ emma.createAccount();}
+\DoxyCodeLine{00057\ \ \ \ \ emma.credit(1,\ 1500.0);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ emma.createAccount();}
+\DoxyCodeLine{00060\ \ \ \ \ emma.credit(2,\ 10000.0);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ emma.debit(0,\ 800.0);}
+\DoxyCodeLine{00063\ \ \ \ \ emma.debit(1,\ 100.0);}
+\DoxyCodeLine{00064\ \ \ \ \ emma.debit(2,\ 600.0);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ my\_bank.\mbox{\hyperlink{classBank_a1fd6ab6aba6e9b5378aec019bcb79738}{insertClient}}(emma);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ smith.debit(0,\ 200.0);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ emma.createAccount();}
+\DoxyCodeLine{00071\ \ \ \ \ emma.createAccount();}
+\DoxyCodeLine{00072\ \ \ \ \ emma.createAccount();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ outputFile\ <<\ endl\ <<\ \textcolor{stringliteral}{"{}-\/-\/-\/\ Final\ Bank\ Status\ -\/-\/-\/"{}}\ <<\ endl;}
+\DoxyCodeLine{00075\ \ \ \ \ outputFile\ <<\ my\_bank\ <<\ endl;}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ outputFile.close();}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00080\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main__ex12_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}

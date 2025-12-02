@@ -1,0 +1,124 @@
+\doxysection{code/include/account.hpp File Reference}
+\hypertarget{account_8hpp}{}\label{account_8hpp}\index{code/include/account.hpp@{code/include/account.hpp}}
+
+
+Declaration of \doxylink{classBank__account}{Bank\+\_\+account} and its derived classes.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for account.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{account_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{account_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classBank__account}{Bank\+\_\+account}}
+\begin{DoxyCompactList}\small\item\em Abstract base class representing a bank account. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classCurrent__account}{Current\+\_\+account}}
+\begin{DoxyCompactList}\small\item\em Class representing a current bank account. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classSaving__account}{Saving\+\_\+account}}
+\begin{DoxyCompactList}\small\item\em Class representing a saving bank account. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classBlocked__account}{Blocked\+\_\+account}}
+\begin{DoxyCompactList}\small\item\em Class representing a blocked saving bank account. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classUnblocked__account}{Unblocked\+\_\+account}}
+\begin{DoxyCompactList}\small\item\em Class representing an unblocked saving bank account. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{account_8hpp_a2b7cf8f97363617068180a65b90ee4fe}{IRATEBLOCKED}}~4
+\item 
+\#define \mbox{\hyperlink{account_8hpp_a2cc2887608aa9cf56376311a516528cf}{IRATEUNBLOCKED}}~2
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{account_8hpp_abe3f9fdf4cc29c4ddb15ad771fca277d}{operator$<$$<$}} (ostream \&o, const \mbox{\hyperlink{classBank__account}{Bank\+\_\+account}} \&account)
+\begin{DoxyCompactList}\small\item\em Overloaded output stream operator for \doxylink{classBank__account}{Bank\+\_\+account}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Declaration of \doxylink{classBank__account}{Bank\+\_\+account} and its derived classes. 
+
+
+
+Definition in file \mbox{\hyperlink{account_8hpp_source}{account.\+hpp}}.
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{account_8hpp_a2b7cf8f97363617068180a65b90ee4fe}\label{account_8hpp_a2b7cf8f97363617068180a65b90ee4fe} 
+\index{account.hpp@{account.hpp}!IRATEBLOCKED@{IRATEBLOCKED}}
+\index{IRATEBLOCKED@{IRATEBLOCKED}!account.hpp@{account.hpp}}
+\doxysubsubsection{\texorpdfstring{IRATEBLOCKED}{IRATEBLOCKED}}
+{\footnotesize\ttfamily \#define IRATEBLOCKED~4}
+
+
+
+Definition at line \mbox{\hyperlink{account_8hpp_source_l00012}{12}} of file \mbox{\hyperlink{account_8hpp_source}{account.\+hpp}}.
+
+\Hypertarget{account_8hpp_a2cc2887608aa9cf56376311a516528cf}\label{account_8hpp_a2cc2887608aa9cf56376311a516528cf} 
+\index{account.hpp@{account.hpp}!IRATEUNBLOCKED@{IRATEUNBLOCKED}}
+\index{IRATEUNBLOCKED@{IRATEUNBLOCKED}!account.hpp@{account.hpp}}
+\doxysubsubsection{\texorpdfstring{IRATEUNBLOCKED}{IRATEUNBLOCKED}}
+{\footnotesize\ttfamily \#define IRATEUNBLOCKED~2}
+
+
+
+Definition at line \mbox{\hyperlink{account_8hpp_source_l00013}{13}} of file \mbox{\hyperlink{account_8hpp_source}{account.\+hpp}}.
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{account_8hpp_abe3f9fdf4cc29c4ddb15ad771fca277d}\label{account_8hpp_abe3f9fdf4cc29c4ddb15ad771fca277d} 
+\index{account.hpp@{account.hpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!account.hpp@{account.hpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{o,  }\item[{const \mbox{\hyperlink{classBank__account}{Bank\+\_\+account}} \&}]{account }\end{DoxyParamCaption})}
+
+
+
+Overloaded output stream operator for \doxylink{classBank__account}{Bank\+\_\+account}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & The output stream. \\
+\hline
+{\em account} & The bank account to print. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output stream. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{account_8cpp_source_l00022}{22}} of file \mbox{\hyperlink{account_8cpp_source}{account.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00023\ \ \ \ \ account.\mbox{\hyperlink{classBank__account_afb2496d0e43faad848d1c73ea1fd709c}{print}}(o);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordflow}{return}\ o;}
+\DoxyCodeLine{00025\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{account_8hpp_abe3f9fdf4cc29c4ddb15ad771fca277d_cgraph}
+\end{center}
+\end{figure}

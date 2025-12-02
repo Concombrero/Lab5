@@ -1,0 +1,94 @@
+\doxysection{client.\+cpp}
+\hypertarget{client_8cpp_source}{}\label{client_8cpp_source}\index{code/src/client.cpp@{code/src/client.cpp}}
+\mbox{\hyperlink{client_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{client_8hpp}{client.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{account_8hpp}{account.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00009}\mbox{\hyperlink{classClient_a441b0df2f966d7ef212dbd7ad97f70d7}{00009}}\ \mbox{\hyperlink{classClient_a441b0df2f966d7ef212dbd7ad97f70d7}{Client::Client}}(\textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ identifier,\ \textcolor{keywordtype}{size\_t}\ maxAccounts)\ \{}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00010}00010\ \ \ \ \ \ \ \ \ this-\/>name\ =\ \mbox{\hyperlink{classClient_a456e36f9972a8bf3ecdb5f0e70b3bd5d}{name}};}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00011}00011\ \ \ \ \ \ \ \ \ this-\/>identifier\ =\ \mbox{\hyperlink{classClient_a63200b2a615353b0afcec162dddbc4b9}{identifier}};}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00012}00012\ \ \ \ \ \ \ \ \ this-\/>maxAccounts\ =\ \mbox{\hyperlink{classClient_a59905eacef3c93514803343a1446db73}{maxAccounts}};}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00013}00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00015}00015\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classBank__account}{Bank\_account}}*[\mbox{\hyperlink{classClient_a59905eacef3c93514803343a1446db73}{maxAccounts}}];}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00016}00016\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00018}\mbox{\hyperlink{classClient_ab74cbe8124ada5342d56030bd608876b}{00018}}\ \mbox{\hyperlink{classClient_a441b0df2f966d7ef212dbd7ad97f70d7}{Client::Client}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classClient}{Client}}\&\ client)\ \{}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00019}00019\ \ \ \ \ \mbox{\hyperlink{classClient_a456e36f9972a8bf3ecdb5f0e70b3bd5d}{name}}\ =\ client.\mbox{\hyperlink{classClient_a456e36f9972a8bf3ecdb5f0e70b3bd5d}{name}};}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00020}00020\ \ \ \ \ \mbox{\hyperlink{classClient_a63200b2a615353b0afcec162dddbc4b9}{identifier}}\ =\ client.\mbox{\hyperlink{classClient_a63200b2a615353b0afcec162dddbc4b9}{identifier}};}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00021}00021\ \ \ \ \ \mbox{\hyperlink{classClient_a59905eacef3c93514803343a1446db73}{maxAccounts}}\ =\ client.\mbox{\hyperlink{classClient_a59905eacef3c93514803343a1446db73}{maxAccounts}};}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00022}00022\ \ \ \ \ \mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}}\ =\ client.\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}};}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00024}00024\ \ \ \ \ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classBank__account}{Bank\_account}}*[client.\mbox{\hyperlink{classClient_a59905eacef3c93514803343a1446db73}{maxAccounts}}];}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00025}00025\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ client.\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}};\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00026}00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}[i]\ =\ client.\mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}[i];}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00027}00027\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00028}00028\ \}}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00030}\mbox{\hyperlink{classClient_a840e519ca781888cbd54181572ebe3a7}{00030}}\ \mbox{\hyperlink{classClient_a840e519ca781888cbd54181572ebe3a7}{Client::\string~Client}}()\ \{}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00031}00031\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ \mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}};\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}[i];}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00033}00033\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00034}00034\ \ \ \ \ \textcolor{keyword}{delete}\ []\ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}};}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00035}00035\ \}}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00037}\mbox{\hyperlink{classClient_a2cba21dbf2d7223d9233f9a117e640a5}{00037}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classClient_a2cba21dbf2d7223d9233f9a117e640a5}{Client::credit}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ idx,\ \textcolor{keywordtype}{double}\ amount)\ \{}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00038}00038\ \ \ \ \ \textcolor{keywordflow}{if}(idx\ >=\ \mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}})\{}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00039}00039\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ account\ index."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00040}00040\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00041}00041\ \ \ \ \ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}[idx]-\/>\mbox{\hyperlink{classBank__account_aa901564fcbadef70465ca2c4c78bc84a}{credit}}(amount);}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00042}00042\ \}}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00044}\mbox{\hyperlink{classClient_aea373e2b310700a294e040a8c52681d1}{00044}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classClient_aea373e2b310700a294e040a8c52681d1}{Client::debit}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ idx,\ \textcolor{keywordtype}{double}\ amount)\ \{}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00045}00045\ \ \ \ \ \textcolor{keywordflow}{if}(idx\ >=\ \mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}})\{}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ account\ index."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00047}00047\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00048}00048\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}[idx]-\/>\mbox{\hyperlink{classBank__account_a2757e0c7d34269e0cbc5ed8d6f305c1a}{debit}}(amount);}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00049}00049\ \}}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00051}\mbox{\hyperlink{classClient_ae06d3f82a48f3c23fee66c150284ea15}{00051}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classClient_ae06d3f82a48f3c23fee66c150284ea15}{Client::createAccount}}()\{}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00052}00052\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}}\ >=\ \mbox{\hyperlink{classClient_a59905eacef3c93514803343a1446db73}{maxAccounts}})\{}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00053}00053\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Maximum\ number\ of\ accounts\ reached."{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00054}00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00055}00055\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00056}00056\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Creation\ of\ a\ current\ account\ (1),\ unblocked\ savings\ account\ (2),\ or\ blocked\ savings\ account\ (3)?"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00057}00057\ \ \ \ \ \textcolor{keywordtype}{int}\ choice;}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00058}00058\ \ \ \ \ std::cin\ >>\ choice;}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00060}00060\ \ \ \ \ \textcolor{keywordflow}{switch}(choice)\{}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 1:}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}[\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}}]\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classCurrent__account}{Current\_account}}(\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}},\ 0);}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}}++;}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 2:}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}[\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}}]\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classUnblocked__account}{Unblocked\_account}}(\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}},\ 0);}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}}++;}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00069}00069\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 3:}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}[\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}}]\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classBlocked__account}{Blocked\_account}}(\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}},\ 0);}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}}++;}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00073}00073\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ choice."{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00076}00076\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00077}00077\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00078}00078\ \}}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00080}\mbox{\hyperlink{classClient_ae600cde4b0e7c02be20b76fda7f0b7d2}{00080}}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classClient_ae600cde4b0e7c02be20b76fda7f0b7d2}{Client::get\_id}}()\ \{}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00081}00081\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classClient_a63200b2a615353b0afcec162dddbc4b9}{identifier}};}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00082}00082\ \}}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00085}\mbox{\hyperlink{classClient_a84126cd2791173dac14dbac668bd8eee}{00085}}\ ostream\&\ \mbox{\hyperlink{client_8cpp_a84126cd2791173dac14dbac668bd8eee}{operator<<}}(ostream\ \&o,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classClient}{Client}}\&\ client)\ \{}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00086}00086\ \ \ \ \ o\ <<\ \textcolor{stringliteral}{"{}Client\ name:\ "{}}\ <<\ client.\mbox{\hyperlink{classClient_a456e36f9972a8bf3ecdb5f0e70b3bd5d}{name}}\ <<\ \textcolor{stringliteral}{"{}\ and\ id\ =\ "{}}\ <<\ client.\mbox{\hyperlink{classClient_a63200b2a615353b0afcec162dddbc4b9}{identifier}}\ <<\ \textcolor{stringliteral}{"{}\ and\ his\ /\ her\ accounts\ :"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00087}00087\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00088}00088\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ client.\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}};\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00089}00089\ \ \ \ \ \ \ \ \ o\ <<\ *(client.\mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}[i])\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00090}00090\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00091}00091\ \ \ \ \ \textcolor{keywordflow}{return}\ o;}
+\DoxyCodeLine{\Hypertarget{client_8cpp_source_l00092}00092\ \}}
+
+\end{DoxyCode}

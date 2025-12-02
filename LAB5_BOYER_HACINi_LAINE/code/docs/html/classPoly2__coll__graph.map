@@ -1,0 +1,5 @@
+<map id="Poly2" name="Poly2">
+<area shape="rect" id="Node000001" title="Class representing a polynomial of degree 2." alt="" coords="15,79,73,104"/>
+<area shape="rect" id="Node000002" href="$classFunction.html" title="Abstract base class representing a mathematical function." alt="" coords="5,5,83,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,44,47,79,41,79,41,44"/>
+</map>

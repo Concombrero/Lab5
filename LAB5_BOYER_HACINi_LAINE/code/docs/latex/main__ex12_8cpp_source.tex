@@ -1,0 +1,82 @@
+\doxysection{main\+\_\+ex12.\+cpp}
+\hypertarget{main__ex12_8cpp_source}{}\label{main__ex12_8cpp_source}\index{code/src/main\_ex12.cpp@{code/src/main\_ex12.cpp}}
+\mbox{\hyperlink{main__ex12_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{bank_8hpp}{bank.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{client_8hpp}{client.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00012}00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00014}\mbox{\hyperlink{main__ex12_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00014}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{main__ex12_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}()\ \{}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00015}00015\ \ \ \ \ ofstream\ outputFile(\textcolor{stringliteral}{"{}bin/output.txt"{}});}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00016}00016\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00017}00017\ \ \ \ \ \textcolor{keywordflow}{if}\ (!outputFile.is\_open())\ \{}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00018}00018\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error\ opening\ file!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00019}00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1;}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00020}00020\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00022}00022\ \ \ \ \ \mbox{\hyperlink{classBank}{Bank}}\ my\_bank;}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00024}00024\ \ \ \ \ \textcolor{comment}{//\ Smith}}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00025}00025\ \ \ \ \ \mbox{\hyperlink{classClient}{Client}}\ smith(\textcolor{stringliteral}{"{}Smith"{}},\ 1234,\ 10);}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00027}00027\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Creation\ of\ accounts\ for\ Smith:"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00028}00028\ \ \ \ \ outputFile\ <<\ \textcolor{stringliteral}{"{}Creation\ of\ accounts\ for\ Smith:"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00029}00029\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00030}00030\ \ \ \ \ smith.\mbox{\hyperlink{classClient_ae06d3f82a48f3c23fee66c150284ea15}{createAccount}}();}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00031}00031\ \ \ \ \ smith.\mbox{\hyperlink{classClient_a2cba21dbf2d7223d9233f9a117e640a5}{credit}}(0,\ 1000.0);}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00033}00033\ \ \ \ \ smith.\mbox{\hyperlink{classClient_ae06d3f82a48f3c23fee66c150284ea15}{createAccount}}();}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00034}00034\ \ \ \ \ smith.\mbox{\hyperlink{classClient_a2cba21dbf2d7223d9233f9a117e640a5}{credit}}(1,\ 2000.0);}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00036}00036\ \ \ \ \ smith.\mbox{\hyperlink{classClient_ae06d3f82a48f3c23fee66c150284ea15}{createAccount}}();}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00037}00037\ \ \ \ \ smith.\mbox{\hyperlink{classClient_a2cba21dbf2d7223d9233f9a117e640a5}{credit}}(2,\ 3000.0);}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00039}00039\ \ \ \ \ smith.\mbox{\hyperlink{classClient_aea373e2b310700a294e040a8c52681d1}{debit}}(1,\ 100.0);}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00041}00041\ \ \ \ \ my\_bank.\mbox{\hyperlink{classBank_a1fd6ab6aba6e9b5378aec019bcb79738}{insertClient}}(smith);}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00043}00043\ \ \ \ \ outputFile\ <<\ endl\ <<\ \textcolor{stringliteral}{"{}-\/-\/-\/\ Final\ Bank\ Status\ -\/-\/-\/"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00044}00044\ \ \ \ \ outputFile\ <<\ my\_bank\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00047}00047\ \ \ \ \ \textcolor{comment}{//\ Emma}}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00048}00048\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nCreation\ of\ Accounts\ for\ Emma:"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00049}00049\ \ \ \ \ outputFile\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nCreation\ of\ Accounts\ for\ Emma:"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00050}00050\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00051}00051\ \ \ \ \ \mbox{\hyperlink{classClient}{Client}}\ emma(\textcolor{stringliteral}{"{}Emma"{}},\ 5678,\ 5);}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00053}00053\ \ \ \ \ emma.\mbox{\hyperlink{classClient_ae06d3f82a48f3c23fee66c150284ea15}{createAccount}}();}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00054}00054\ \ \ \ \ emma.\mbox{\hyperlink{classClient_a2cba21dbf2d7223d9233f9a117e640a5}{credit}}(0,\ 500.0);}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00056}00056\ \ \ \ \ emma.\mbox{\hyperlink{classClient_ae06d3f82a48f3c23fee66c150284ea15}{createAccount}}();}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00057}00057\ \ \ \ \ emma.\mbox{\hyperlink{classClient_a2cba21dbf2d7223d9233f9a117e640a5}{credit}}(1,\ 1500.0);}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00059}00059\ \ \ \ \ emma.\mbox{\hyperlink{classClient_ae06d3f82a48f3c23fee66c150284ea15}{createAccount}}();}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00060}00060\ \ \ \ \ emma.\mbox{\hyperlink{classClient_a2cba21dbf2d7223d9233f9a117e640a5}{credit}}(2,\ 10000.0);}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00062}00062\ \ \ \ \ emma.\mbox{\hyperlink{classClient_aea373e2b310700a294e040a8c52681d1}{debit}}(0,\ 800.0);}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00063}00063\ \ \ \ \ emma.\mbox{\hyperlink{classClient_aea373e2b310700a294e040a8c52681d1}{debit}}(1,\ 100.0);}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00064}00064\ \ \ \ \ emma.\mbox{\hyperlink{classClient_aea373e2b310700a294e040a8c52681d1}{debit}}(2,\ 600.0);}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00066}00066\ \ \ \ \ my\_bank.\mbox{\hyperlink{classBank_a1fd6ab6aba6e9b5378aec019bcb79738}{insertClient}}(emma);}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00068}00068\ \ \ \ \ smith.\mbox{\hyperlink{classClient_aea373e2b310700a294e040a8c52681d1}{debit}}(0,\ 200.0);}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00070}00070\ \ \ \ \ emma.\mbox{\hyperlink{classClient_ae06d3f82a48f3c23fee66c150284ea15}{createAccount}}();}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00071}00071\ \ \ \ \ emma.\mbox{\hyperlink{classClient_ae06d3f82a48f3c23fee66c150284ea15}{createAccount}}();}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00072}00072\ \ \ \ \ emma.\mbox{\hyperlink{classClient_ae06d3f82a48f3c23fee66c150284ea15}{createAccount}}();}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00074}00074\ \ \ \ \ outputFile\ <<\ endl\ <<\ \textcolor{stringliteral}{"{}-\/-\/-\/\ Final\ Bank\ Status\ -\/-\/-\/"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00075}00075\ \ \ \ \ outputFile\ <<\ my\_bank\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00077}00077\ \ \ \ \ outputFile.close();}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00079}00079\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{main__ex12_8cpp_source_l00080}00080\ \}}
+
+\end{DoxyCode}

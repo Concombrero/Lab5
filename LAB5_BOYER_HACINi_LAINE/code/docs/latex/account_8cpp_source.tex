@@ -1,0 +1,83 @@
+\doxysection{account.\+cpp}
+\hypertarget{account_8cpp_source}{}\label{account_8cpp_source}\index{code/src/account.cpp@{code/src/account.cpp}}
+\mbox{\hyperlink{account_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{account_8hpp}{account.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00008}00008\ \textcolor{comment}{//\ Bank\_account}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00009}\mbox{\hyperlink{classBank__account_ad151d7994c3fdb21dd6a81e2b697912a}{00009}}\ \mbox{\hyperlink{classBank__account_ad151d7994c3fdb21dd6a81e2b697912a}{Bank\_account::Bank\_account}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ bank\_id,\ \textcolor{keywordtype}{double}\ balance)\ \{}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00010}00010\ \ \ \ \ this-\/>bank\_id\ =\ \mbox{\hyperlink{classBank__account_a96f32420eba2642a1be581e5d1c50c8e}{bank\_id}};}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00011}00011\ \ \ \ \ this-\/>balance\ =\ \mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}};}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00012}00012\ \}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00014}\mbox{\hyperlink{classBank__account_aa901564fcbadef70465ca2c4c78bc84a}{00014}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBank__account_aa901564fcbadef70465ca2c4c78bc84a}{Bank\_account::credit}}(\textcolor{keywordtype}{double}\ amount)\ \{}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00015}00015\ \ \ \ \ \mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}}\ +=\ amount;}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00016}00016\ \}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00018}\mbox{\hyperlink{classBank__account_ac4a3fb416a9f822b0a137e081c13de7d}{00018}}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classBank__account_ac4a3fb416a9f822b0a137e081c13de7d}{Bank\_account::operator()}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00019}00019\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classBank__account_a96f32420eba2642a1be581e5d1c50c8e}{bank\_id}};}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00020}00020\ \}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00022}\mbox{\hyperlink{account_8hpp_abe3f9fdf4cc29c4ddb15ad771fca277d}{00022}}\ ostream\&\ \mbox{\hyperlink{account_8cpp_abe3f9fdf4cc29c4ddb15ad771fca277d}{operator<<}}(ostream\ \&o,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classBank__account}{Bank\_account}}\ \&account)\ \{}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00023}00023\ \ \ \ \ account.\mbox{\hyperlink{classBank__account_afb2496d0e43faad848d1c73ea1fd709c}{print}}(o);}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00024}00024\ \ \ \ \ \textcolor{keywordflow}{return}\ o;}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00025}00025\ \}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00027}00027\ \textcolor{comment}{//\ Current\_account}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00028}\mbox{\hyperlink{classCurrent__account_a7dfb45d11a3040f8ebc9cff1755efd58}{00028}}\ \mbox{\hyperlink{classCurrent__account_a7dfb45d11a3040f8ebc9cff1755efd58}{Current\_account::Current\_account}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ bank\_id,\ \textcolor{keywordtype}{double}\ balance)\ :\ }
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00029}00029\ \ \ \ \ \mbox{\hyperlink{classBank__account}{Bank\_account}}(bank\_id,\ balance)\ \{\}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00031}\mbox{\hyperlink{classCurrent__account_a32befcf808713fce579986ec43c869d1}{00031}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classCurrent__account_a32befcf808713fce579986ec43c869d1}{Current\_account::debit}}(\textcolor{keywordtype}{double}\ amount)\ \{}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00032}00032\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}}\ >=\ amount)\ \{}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}}\ -\/=\ amount;}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ amount;}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00035}00035\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}}\ >\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ res\ =\ \mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}};}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00039}00039\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00040}00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00041}00041\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00042}00042\ \}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00044}\mbox{\hyperlink{classCurrent__account_ab211e66af8b5bb9cb3a8c6c2f3e6a4b9}{00044}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCurrent__account_ab211e66af8b5bb9cb3a8c6c2f3e6a4b9}{Current\_account::print}}(ostream\ \&o)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00045}00045\ \ \ \ \ o\ <<\ \textcolor{stringliteral}{"{}**\ Current\ account\ **"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00046}00046\ \ \ \ \ o\ <<\ \textcolor{stringliteral}{"{}Account\ number\ =\ "{}}\ <<\ (*this)()\ <<\ \textcolor{stringliteral}{"{},\ balance\ =\ "{}}\ <<\ \mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}}\ <<\ \textcolor{stringliteral}{"{}\ euros"{}};}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00047}00047\ \}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00048}00048\ \textcolor{comment}{//\ Saving\_account}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00049}\mbox{\hyperlink{classSaving__account_a5f31636705974434e66cecb6076f1809}{00049}}\ \mbox{\hyperlink{classSaving__account_a5f31636705974434e66cecb6076f1809}{Saving\_account::Saving\_account}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ bank\_id,\ \textcolor{keywordtype}{double}\ balance,\ \textcolor{keywordtype}{double}\ interest\_rate)\ :\ \mbox{\hyperlink{classBank__account}{Bank\_account}}(bank\_id,\ balance)\ \{}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00050}00050\ \ \ \ \ this-\/>interest\_rate\ =\ \mbox{\hyperlink{classSaving__account_a17cfa6d52ff794964ea121e1aa4e8cb1}{interest\_rate}};\ }
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00051}00051\ \}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00053}\mbox{\hyperlink{classSaving__account_ae674ec68bba9e00a1ff8970569f6502e}{00053}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSaving__account_ae674ec68bba9e00a1ff8970569f6502e}{Saving\_account::print}}(ostream\ \&o)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00054}00054\ \ \ \ \ o\ <<\ \textcolor{stringliteral}{"{}**\ Savings\ account\ **"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00055}00055\ \ \ \ \ o\ <<\ \textcolor{stringliteral}{"{}Account\ number\ =\ "{}}\ <<\ (*this)()\ <<\ \textcolor{stringliteral}{"{},\ balance\ =\ "{}}\ <<\ \mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}}\ <<\ \textcolor{stringliteral}{"{}\ euros\(\backslash\)nand\ Interest\ rate\ =\ "{}}\ <<\ \mbox{\hyperlink{classSaving__account_a17cfa6d52ff794964ea121e1aa4e8cb1}{interest\_rate}}\ <<\ \textcolor{stringliteral}{"{}\%"{}};}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00056}00056\ \}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00058}\mbox{\hyperlink{classSaving__account_a701e49544e5e546c63b4ba99df49d2f4}{00058}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSaving__account_a701e49544e5e546c63b4ba99df49d2f4}{Saving\_account::add\_interest}}(\textcolor{keywordtype}{double}\ interest)\ \{}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00059}00059\ \ \ \ \ \mbox{\hyperlink{classSaving__account_a17cfa6d52ff794964ea121e1aa4e8cb1}{interest\_rate}}\ +=\ interest;}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00060}00060\ \}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00062}00062\ \textcolor{comment}{//\ Blocked\_account}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00063}\mbox{\hyperlink{classBlocked__account_ad7ccacf080e8046941d8e9c0ea3bdb48}{00063}}\ \mbox{\hyperlink{classBlocked__account_ad7ccacf080e8046941d8e9c0ea3bdb48}{Blocked\_account::Blocked\_account}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ bank\_id,\ \textcolor{keywordtype}{double}\ balance)\ :\ }
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00064}00064\ \ \ \ \ \mbox{\hyperlink{classSaving__account}{Saving\_account}}(bank\_id,\ balance,\ \mbox{\hyperlink{account_8hpp_a2b7cf8f97363617068180a65b90ee4fe}{IRATEBLOCKED}})\ \{\}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00066}\mbox{\hyperlink{classBlocked__account_a59a054acccb82c9536b4a0c988ee72e7}{00066}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classBlocked__account_a59a054acccb82c9536b4a0c988ee72e7}{Blocked\_account::debit}}([[maybe\_unused]]\ \textcolor{keywordtype}{double}\ amount)\ \{}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00067}00067\ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00068}00068\ \}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00070}00070\ \textcolor{comment}{//\ Unblocked\ account}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00071}\mbox{\hyperlink{classUnblocked__account_ac39ec9fd9235ecfdd45ce1461c24c895}{00071}}\ \mbox{\hyperlink{classUnblocked__account_ac39ec9fd9235ecfdd45ce1461c24c895}{Unblocked\_account::Unblocked\_account}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ bank\_id,\ \textcolor{keywordtype}{double}\ balance)\ :\ }
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00072}00072\ \ \ \ \ \mbox{\hyperlink{classSaving__account}{Saving\_account}}(bank\_id,\ balance,\ \mbox{\hyperlink{account_8hpp_a2cc2887608aa9cf56376311a516528cf}{IRATEUNBLOCKED}})\ \{\}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00074}\mbox{\hyperlink{classUnblocked__account_af56458c1d82ff26345d137bf07119b7f}{00074}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classUnblocked__account_af56458c1d82ff26345d137bf07119b7f}{Unblocked\_account::debit}}(\textcolor{keywordtype}{double}\ amount)\ \{}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00075}00075\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}}\ >=\ amount)\ \{}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00076}00076\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}}\ -\/=\ amount;}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00077}00077\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ amount;}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00078}00078\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00079}00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00080}00080\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{account_8cpp_source_l00081}00081\ \}}
+
+\end{DoxyCode}

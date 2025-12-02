@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classFunction.html" title="Abstract base class representing a mathematical function." alt="" coords="5,55,83,80"/>
+<area shape="rect" id="Node000001" href="$classPoly0.html" title="Class representing a polynomial of degree 0." alt="" coords="131,5,189,31"/>
+<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="86,47,129,28,131,33,88,52"/>
+<area shape="rect" id="Node000002" href="$classPoly1.html" title="Class representing a polynomial of degree 1." alt="" coords="131,55,189,80"/>
+<area shape="poly" id="edge6_Node000000_Node000002" title=" " alt="" coords="96,65,130,65,130,70,96,70"/>
+<area shape="rect" id="Node000003" href="$classPoly2.html" title="Class representing a polynomial of degree 2." alt="" coords="131,104,189,129"/>
+<area shape="poly" id="edge7_Node000000_Node000003" title=" " alt="" coords="88,83,131,102,129,107,86,88"/>
+</map>

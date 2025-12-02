@@ -1,0 +1,148 @@
+\doxysection{Blocked\+\_\+account Class Reference}
+\hypertarget{classBlocked__account}{}\label{classBlocked__account}\index{Blocked\_account@{Blocked\_account}}
+
+
+Class representing a blocked saving bank account.  
+
+
+
+
+{\ttfamily \#include $<$account.\+hpp$>$}
+
+
+
+Inheritance diagram for Blocked\+\_\+account\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classBlocked__account__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Blocked\+\_\+account\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classBlocked__account__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBlocked__account_ad7ccacf080e8046941d8e9c0ea3bdb48}{Blocked\+\_\+account}} (unsigned int \mbox{\hyperlink{classBank__account_a96f32420eba2642a1be581e5d1c50c8e}{bank\+\_\+id}}, double \mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}})
+\begin{DoxyCompactList}\small\item\em Constructor to initialize blocked account with ID and balance. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classBlocked__account_a59a054acccb82c9536b4a0c988ee72e7}{debit}} (double amount) override
+\begin{DoxyCompactList}\small\item\em Debit operation is not allowed for blocked accounts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classSaving__account}{Saving\+\_\+account}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSaving__account_a5f31636705974434e66cecb6076f1809}{Saving\+\_\+account}} (unsigned int \mbox{\hyperlink{classBank__account_a96f32420eba2642a1be581e5d1c50c8e}{bank\+\_\+id}}, double \mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}}, double \mbox{\hyperlink{classSaving__account_a17cfa6d52ff794964ea121e1aa4e8cb1}{interest\+\_\+rate}})
+\begin{DoxyCompactList}\small\item\em Constructor to initialize saving account with ID, balance, and interest rate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSaving__account_ae674ec68bba9e00a1ff8970569f6502e}{print}} (ostream \&o) const override
+\begin{DoxyCompactList}\small\item\em Print account details. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSaving__account_a701e49544e5e546c63b4ba99df49d2f4}{add\+\_\+interest}} (double interest)
+\begin{DoxyCompactList}\small\item\em Add interest to the account balance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classBank__account}{Bank\+\_\+account}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBank__account_ad151d7994c3fdb21dd6a81e2b697912a}{Bank\+\_\+account}} (unsigned int \mbox{\hyperlink{classBank__account_a96f32420eba2642a1be581e5d1c50c8e}{bank\+\_\+id}}, double \mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}})
+\begin{DoxyCompactList}\small\item\em Constructor to initialize bank account with ID and balance. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classBank__account_a089a477786f87159c92d807d19b2cc1e}{\texorpdfstring{$\sim$}{\string~}\+Bank\+\_\+account}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBank__account_aa901564fcbadef70465ca2c4c78bc84a}{credit}} (double amount)
+\begin{DoxyCompactList}\small\item\em Credit the account with a specified amount. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classBank__account_ac4a3fb416a9f822b0a137e081c13de7d}{operator()}} () const
+\begin{DoxyCompactList}\small\item\em \doxylink{classFunction}{Function} call operator to get the bank ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classSaving__account}{Saving\+\_\+account}}}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classSaving__account_a17cfa6d52ff794964ea121e1aa4e8cb1}{interest\+\_\+rate}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classBank__account}{Bank\+\_\+account}}}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a blocked saving bank account. 
+
+Definition at line \mbox{\hyperlink{account_8hpp_source_l00130}{130}} of file \mbox{\hyperlink{account_8hpp_source}{account.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classBlocked__account_ad7ccacf080e8046941d8e9c0ea3bdb48}\label{classBlocked__account_ad7ccacf080e8046941d8e9c0ea3bdb48} 
+\index{Blocked\_account@{Blocked\_account}!Blocked\_account@{Blocked\_account}}
+\index{Blocked\_account@{Blocked\_account}!Blocked\_account@{Blocked\_account}}
+\doxysubsubsection{\texorpdfstring{Blocked\_account()}{Blocked\_account()}}
+{\footnotesize\ttfamily Blocked\+\_\+account\+::\+Blocked\+\_\+account (\begin{DoxyParamCaption}\item[{unsigned int}]{bank\+\_\+id,  }\item[{double}]{balance }\end{DoxyParamCaption})}
+
+
+
+Constructor to initialize blocked account with ID and balance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bank\+\_\+id} & The unique identifier for the bank account. \\
+\hline
+{\em balance} & The initial balance of the account. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{account_8cpp_source_l00063}{63}} of file \mbox{\hyperlink{account_8cpp_source}{account.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ }
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{classSaving__account}{Saving\_account}}(\mbox{\hyperlink{classBank__account_a96f32420eba2642a1be581e5d1c50c8e}{bank\_id}},\ \mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}},\ \mbox{\hyperlink{account_8hpp_a2b7cf8f97363617068180a65b90ee4fe}{IRATEBLOCKED}})\ \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classBlocked__account_a59a054acccb82c9536b4a0c988ee72e7}\label{classBlocked__account_a59a054acccb82c9536b4a0c988ee72e7} 
+\index{Blocked\_account@{Blocked\_account}!debit@{debit}}
+\index{debit@{debit}!Blocked\_account@{Blocked\_account}}
+\doxysubsubsection{\texorpdfstring{debit()}{debit()}}
+{\footnotesize\ttfamily double Blocked\+\_\+account\+::debit (\begin{DoxyParamCaption}\item[{double}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Debit operation is not allowed for blocked accounts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to debit (unused). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Always returns 0. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBank__account_a2757e0c7d34269e0cbc5ed8d6f305c1a}{Bank\+\_\+account}}.
+
+
+
+Definition at line \mbox{\hyperlink{account_8cpp_source_l00066}{66}} of file \mbox{\hyperlink{account_8cpp_source}{account.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00068\ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+code/include/\mbox{\hyperlink{account_8hpp}{account.\+hpp}}\item 
+code/src/\mbox{\hyperlink{account_8cpp}{account.\+cpp}}\end{DoxyCompactItemize}

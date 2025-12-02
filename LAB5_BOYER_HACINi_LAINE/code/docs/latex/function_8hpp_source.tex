@@ -1,0 +1,97 @@
+\doxysection{function.\+hpp}
+\hypertarget{function_8hpp_source}{}\label{function_8hpp_source}\index{code/include/function.hpp@{code/include/function.hpp}}
+\mbox{\hyperlink{function_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ FUNCTION\_HPP}}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00002}00002\ \textcolor{preprocessor}{\#define\ FUNCTION\_HPP}}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00014}\mbox{\hyperlink{classFunction}{00014}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classFunction}{Function}}\ \{}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00015}00015\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00016}\mbox{\hyperlink{classFunction_a161d1ceb4f67f3222caf429fea7b71f1}{00016}}\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classFunction_a161d1ceb4f67f3222caf429fea7b71f1}{name}};}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00018}00018\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00019}\mbox{\hyperlink{classFunction_ab88fa54dadaf165b9d669c44f5c1e0ed}{00019}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFunction_ab88fa54dadaf165b9d669c44f5c1e0ed}{Function}}(\textcolor{keyword}{const}\ std::string\&\ i\_name)\ :\ \mbox{\hyperlink{classFunction_a161d1ceb4f67f3222caf429fea7b71f1}{name}}(i\_name)\ \{\}}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00030}00030\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00031}\mbox{\hyperlink{classFunction_a32e1cd9a5aeca21070e5b5cb535a8094}{00031}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classFunction_a32e1cd9a5aeca21070e5b5cb535a8094}{eval}}(\textcolor{keywordtype}{double}\ x0)\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00032}00032\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00041}00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00042}\mbox{\hyperlink{classFunction_a950afc777a2934005a2346875599c96a}{00042}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFunction}{Function}}*\ \mbox{\hyperlink{classFunction_a950afc777a2934005a2346875599c96a}{derivative}}()\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00050}00050\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00051}\mbox{\hyperlink{classFunction_a150b9da26a0cbbbbd41245c4f9de1bf6}{00051}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFunction_a150b9da26a0cbbbbd41245c4f9de1bf6}{display}}()\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00052}00052\ \};}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00060}\mbox{\hyperlink{classPoly0}{00060}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPoly0}{Poly0}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFunction}{Function}}\ \{}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00061}00061\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00062}\mbox{\hyperlink{classPoly0_ae74022b4f0c2c2e8815df872df3e161b}{00062}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPoly0_ae74022b4f0c2c2e8815df872df3e161b}{k0}};}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00064}00064\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00065}\mbox{\hyperlink{classPoly0_a82a188766db841a3303be6de9cebcdcc}{00065}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPoly0_a82a188766db841a3303be6de9cebcdcc}{Poly0}}(\textcolor{keywordtype}{double}\ i\_k0)\ :\ \mbox{\hyperlink{classFunction}{Function}}(\textcolor{stringliteral}{"{}Poly0"{}}),\ \mbox{\hyperlink{classPoly0_ae74022b4f0c2c2e8815df872df3e161b}{k0}}(i\_k0)\ \{\}}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00067}\mbox{\hyperlink{classPoly0_a99e5280255a4fefcb0c4d16d8be50ecb}{00067}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPoly0_a99e5280255a4fefcb0c4d16d8be50ecb}{eval}}(\textcolor{keywordtype}{double}\ x0)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPoly0_ae74022b4f0c2c2e8815df872df3e161b}{k0}};}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00069}00069\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00071}\mbox{\hyperlink{classPoly0_a2c6233fa89b447535a20e07301282520}{00071}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFunction}{Function}}*\ \mbox{\hyperlink{classPoly0_a2c6233fa89b447535a20e07301282520}{derivative}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classPoly0}{Poly0}}(0.0);}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00073}00073\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00075}\mbox{\hyperlink{classPoly0_a1f332888aeadad3ff8e9fc9fd84dea80}{00075}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPoly0_a1f332888aeadad3ff8e9fc9fd84dea80}{display}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}This\ function\ is\ a\ Polynomial\ of\ degree\ 0."{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}p(x)\ =\ "{}}\ <<\ \mbox{\hyperlink{classPoly0_ae74022b4f0c2c2e8815df872df3e161b}{k0}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00078}00078\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00079}00079\ \};}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00087}\mbox{\hyperlink{classPoly1}{00087}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPoly1}{Poly1}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFunction}{Function}}\ \{}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00088}00088\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00089}\mbox{\hyperlink{classPoly1_a4c8673de8b2bb0d9b550082178126038}{00089}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPoly1_a4c8673de8b2bb0d9b550082178126038}{k0}};}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00090}\mbox{\hyperlink{classPoly1_aa362ae8fc9351d072ca97d9855df0e4a}{00090}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPoly1_aa362ae8fc9351d072ca97d9855df0e4a}{k1}};}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00091}00091\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00092}00092\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00093}\mbox{\hyperlink{classPoly1_a6e92383dc040d48079c627251fbe0df2}{00093}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPoly1_a6e92383dc040d48079c627251fbe0df2}{Poly1}}(\textcolor{keywordtype}{double}\ i\_k0,\ \textcolor{keywordtype}{double}\ i\_k1)\ :\ \mbox{\hyperlink{classFunction}{Function}}(\textcolor{stringliteral}{"{}Poly1"{}}),\ \mbox{\hyperlink{classPoly1_a4c8673de8b2bb0d9b550082178126038}{k0}}(i\_k0),\ \mbox{\hyperlink{classPoly1_aa362ae8fc9351d072ca97d9855df0e4a}{k1}}(i\_k1)\ \{\}\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00095}\mbox{\hyperlink{classPoly1_ad8527086596b6d58cb248db5c16c1bc6}{00095}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPoly1_ad8527086596b6d58cb248db5c16c1bc6}{eval}}(\textcolor{keywordtype}{double}\ x0)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPoly1_a4c8673de8b2bb0d9b550082178126038}{k0}}\ +\ \mbox{\hyperlink{classPoly1_aa362ae8fc9351d072ca97d9855df0e4a}{k1}}\ *\ x0;}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00097}00097\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00099}\mbox{\hyperlink{classPoly1_ab81d64c94cb7da5ef5473da0e2aacbe8}{00099}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFunction}{Function}}*\ \mbox{\hyperlink{classPoly1_ab81d64c94cb7da5ef5473da0e2aacbe8}{derivative}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00100}00100\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classPoly0}{Poly0}}(\mbox{\hyperlink{classPoly1_aa362ae8fc9351d072ca97d9855df0e4a}{k1}});}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00101}00101\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00102}00102\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00103}\mbox{\hyperlink{classPoly1_adec2ea612c4bda02487a76742bf1ad5c}{00103}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPoly1_adec2ea612c4bda02487a76742bf1ad5c}{display}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}This\ function\ is\ a\ Polynomial\ of\ degree\ 1."{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00105}00105\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}p(x)\ =\ "{}}\ <<\ \mbox{\hyperlink{classPoly1_a4c8673de8b2bb0d9b550082178126038}{k0}}\ <<\ \textcolor{stringliteral}{"{}\ +\ "{}}\ <<\ \mbox{\hyperlink{classPoly1_aa362ae8fc9351d072ca97d9855df0e4a}{k1}}\ <<\ \textcolor{stringliteral}{"{}.x"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00106}00106\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00107}00107\ \};}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00115}\mbox{\hyperlink{classPoly2}{00115}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPoly2}{Poly2}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFunction}{Function}}\ \{}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00116}00116\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00117}\mbox{\hyperlink{classPoly2_ac9d04ca8ed0a09eaa9b3dedc20a25e68}{00117}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPoly2_ac9d04ca8ed0a09eaa9b3dedc20a25e68}{k0}},\ \mbox{\hyperlink{classPoly2_adf032de1b0e8fc5dccf73a94f3be49bf}{k1}},\ \mbox{\hyperlink{classPoly2_a8f03f5a810d3f53f966eee262d2ff09a}{k2}};}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00118}00118\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00119}00119\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00120}\mbox{\hyperlink{classPoly2_a98b8c3603212c40abc5c9ac2624fa08d}{00120}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPoly2_a98b8c3603212c40abc5c9ac2624fa08d}{Poly2}}(\textcolor{keywordtype}{double}\ i\_k0,\ \textcolor{keywordtype}{double}\ i\_k1,\ \textcolor{keywordtype}{double}\ i\_k2)\ :\ \mbox{\hyperlink{classFunction}{Function}}(\textcolor{stringliteral}{"{}Poly2"{}}),\ \mbox{\hyperlink{classPoly2_ac9d04ca8ed0a09eaa9b3dedc20a25e68}{k0}}(i\_k0),\ \mbox{\hyperlink{classPoly2_adf032de1b0e8fc5dccf73a94f3be49bf}{k1}}(i\_k1),\ \mbox{\hyperlink{classPoly2_a8f03f5a810d3f53f966eee262d2ff09a}{k2}}(i\_k2)\ \{\}\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00121}00121\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00122}\mbox{\hyperlink{classPoly2_afaf70d28e167849d23f956eabf1b0900}{00122}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPoly2_afaf70d28e167849d23f956eabf1b0900}{eval}}(\textcolor{keywordtype}{double}\ x0)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00123}00123\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPoly2_ac9d04ca8ed0a09eaa9b3dedc20a25e68}{k0}}\ +\ \mbox{\hyperlink{classPoly2_adf032de1b0e8fc5dccf73a94f3be49bf}{k1}}\ *\ x0\ +\ \mbox{\hyperlink{classPoly2_a8f03f5a810d3f53f966eee262d2ff09a}{k2}}\ *\ x0\ *\ x0;}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00124}00124\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00125}00125\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00126}\mbox{\hyperlink{classPoly2_aa1c1a2a7ce7f83ae447bbbf0e069b13e}{00126}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFunction}{Function}}*\ \mbox{\hyperlink{classPoly2_aa1c1a2a7ce7f83ae447bbbf0e069b13e}{derivative}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00127}00127\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classPoly1}{Poly1}}(\mbox{\hyperlink{classPoly2_adf032de1b0e8fc5dccf73a94f3be49bf}{k1}},\ 2\ *\ \mbox{\hyperlink{classPoly2_a8f03f5a810d3f53f966eee262d2ff09a}{k2}});}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00128}00128\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00129}00129\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00130}\mbox{\hyperlink{classPoly2_a9282a1c2bb35d6583965362dd473aef1}{00130}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPoly2_a9282a1c2bb35d6583965362dd473aef1}{display}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00131}00131\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}This\ function\ is\ a\ Polynomial\ of\ degree\ 2."{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00132}00132\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}p(x)\ =\ "{}}\ <<\ \mbox{\hyperlink{classPoly2_ac9d04ca8ed0a09eaa9b3dedc20a25e68}{k0}}\ <<\ \textcolor{stringliteral}{"{}\ +\ "{}}\ <<\ \mbox{\hyperlink{classPoly2_adf032de1b0e8fc5dccf73a94f3be49bf}{k1}}\ <<\ \textcolor{stringliteral}{"{}.x\ +\ "{}}\ <<\ \mbox{\hyperlink{classPoly2_a8f03f5a810d3f53f966eee262d2ff09a}{k2}}\ <<\ \textcolor{stringliteral}{"{}.x\string^2"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00133}00133\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00134}00134\ \};}
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00135}00135\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00136}00136\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00137}00137\ }
+\DoxyCodeLine{\Hypertarget{function_8hpp_source_l00138}00138\ \textcolor{preprocessor}{\#endif\ }}
+
+\end{DoxyCode}

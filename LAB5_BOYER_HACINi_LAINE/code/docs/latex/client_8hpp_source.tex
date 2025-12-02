@@ -1,0 +1,47 @@
+\doxysection{client.\+hpp}
+\hypertarget{client_8hpp_source}{}\label{client_8hpp_source}\index{code/include/client.hpp@{code/include/client.hpp}}
+\mbox{\hyperlink{client_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00006}00006\ \textcolor{preprocessor}{\#ifndef\ CLIENT\_HPP}}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00007}00007\ \textcolor{preprocessor}{\#define\ CLIENT\_HPP}}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00010}00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00012}00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{account_8hpp}{account.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00020}\mbox{\hyperlink{classClient}{00020}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classClient}{Client}}\ \{}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00021}00021\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00022}\mbox{\hyperlink{classClient_a456e36f9972a8bf3ecdb5f0e70b3bd5d}{00022}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classClient_a456e36f9972a8bf3ecdb5f0e70b3bd5d}{name}};\ \textcolor{comment}{//\ Client's\ name}}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00023}\mbox{\hyperlink{classClient_a63200b2a615353b0afcec162dddbc4b9}{00023}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classClient_a63200b2a615353b0afcec162dddbc4b9}{identifier}};\ \textcolor{comment}{//\ Unique\ identifier\ for\ the\ client}}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00025}\mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{00025}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBank__account}{Bank\_account}}**\ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}};\ \textcolor{comment}{//\ Array\ of\ pointers\ to\ the\ client's\ bank\ accounts}}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00026}\mbox{\hyperlink{classClient_a59905eacef3c93514803343a1446db73}{00026}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{classClient_a59905eacef3c93514803343a1446db73}{maxAccounts}};\ \textcolor{comment}{//\ Maximum\ number\ of\ accounts\ the\ client\ can\ have}}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00027}\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{00027}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}};\ \textcolor{comment}{//\ Current\ number\ of\ accounts\ the\ client\ has}}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00029}00029\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00036}00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient}{Client}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classClient_a456e36f9972a8bf3ecdb5f0e70b3bd5d}{name}},\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classClient_a63200b2a615353b0afcec162dddbc4b9}{identifier}},\ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{classClient_a59905eacef3c93514803343a1446db73}{maxAccounts}});}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00042}00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient}{Client}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classClient}{Client}}\&\ client);}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00047}00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient_a840e519ca781888cbd54181572ebe3a7}{\string~Client}}();}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00048}00048\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00053}00053\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classClient_ae06d3f82a48f3c23fee66c150284ea15}{createAccount}}();}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classClient_ae600cde4b0e7c02be20b76fda7f0b7d2}{get\_id}}();}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00066}00066\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classClient_a2cba21dbf2d7223d9233f9a117e640a5}{credit}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ idx,\ \textcolor{keywordtype}{double}\ amount);}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00074}00074\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classClient_aea373e2b310700a294e040a8c52681d1}{debit}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ idx,\ \textcolor{keywordtype}{double}\ amount);}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00082}00082\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ ostream\&\ \mbox{\hyperlink{classClient_a84126cd2791173dac14dbac668bd8eee}{operator<<}}(ostream\ \&o,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classClient}{Client}}\&\ client);}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00083}00083\ \};}
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{client_8hpp_source_l00087}00087\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

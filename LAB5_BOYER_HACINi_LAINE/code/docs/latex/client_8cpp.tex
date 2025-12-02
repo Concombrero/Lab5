@@ -1,0 +1,66 @@
+\doxysection{code/src/client.cpp File Reference}
+\hypertarget{client_8cpp}{}\label{client_8cpp}\index{code/src/client.cpp@{code/src/client.cpp}}
+
+
+Implementation of the \doxylink{classClient}{Client} class.  
+
+
+{\ttfamily \#include "{}client.\+hpp"{}}\newline
+{\ttfamily \#include "{}account.\+hpp"{}}\newline
+Include dependency graph for client.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{client_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{client_8cpp_a84126cd2791173dac14dbac668bd8eee}{operator$<$$<$}} (ostream \&o, const \mbox{\hyperlink{classClient}{Client}} \&client)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of the \doxylink{classClient}{Client} class. 
+
+
+
+Definition in file \mbox{\hyperlink{client_8cpp_source}{client.\+cpp}}.
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{client_8cpp_a84126cd2791173dac14dbac668bd8eee}\label{client_8cpp_a84126cd2791173dac14dbac668bd8eee} 
+\index{client.cpp@{client.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!client.cpp@{client.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{o,  }\item[{const \mbox{\hyperlink{classClient}{Client}} \&}]{client }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & The output stream. \\
+\hline
+{\em client} & The client to print. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output stream. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{client_8cpp_source_l00085}{85}} of file \mbox{\hyperlink{client_8cpp_source}{client.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00086\ \ \ \ \ o\ <<\ \textcolor{stringliteral}{"{}Client\ name:\ "{}}\ <<\ client.\mbox{\hyperlink{classClient_a456e36f9972a8bf3ecdb5f0e70b3bd5d}{name}}\ <<\ \textcolor{stringliteral}{"{}\ and\ id\ =\ "{}}\ <<\ client.\mbox{\hyperlink{classClient_a63200b2a615353b0afcec162dddbc4b9}{identifier}}\ <<\ \textcolor{stringliteral}{"{}\ and\ his\ /\ her\ accounts\ :"{}}\ <<\ endl;}
+\DoxyCodeLine{00087\ \ \ \ \ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ client.\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}};\ i++)\ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ o\ <<\ *(client.\mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}[i])\ <<\ endl;}
+\DoxyCodeLine{00090\ \ \ \ \ \}}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordflow}{return}\ o;}
+\DoxyCodeLine{00092\ \}}
+
+\end{DoxyCode}

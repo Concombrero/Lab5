@@ -1,0 +1,17 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,60,105"/>
+<area shape="rect" id="Node000002" href="$classClient.html#ae06d3f82a48f3c23fee66c150284ea15" title="Creates a new bank account for the client if possible." alt="" coords="108,5,269,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,78,75,58,107,40,123,33,125,38,109,44,78,63,51,82"/>
+<area shape="rect" id="Node000003" href="$classClient.html#a2cba21dbf2d7223d9233f9a117e640a5" title="Credits a specified amount to the client&#39;s account at the given index." alt="" coords="136,55,241,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="60,86,122,75,123,81,60,91"/>
+<area shape="rect" id="Node000005" href="$classClient.html#aea373e2b310700a294e040a8c52681d1" title="Debits a specified amount from the client&#39;s account at the given index." alt="" coords="138,104,239,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="60,94,124,104,124,109,60,99"/>
+<area shape="rect" id="Node000007" href="$classBank.html#a1fd6ab6aba6e9b5378aec019bcb79738" title="Destructor for the Bank class." alt="" coords="119,153,258,179"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="52,103,109,138,129,146,127,151,107,143,49,108"/>
+<area shape="rect" id="Node000004" href="$classBank__account.html#aa901564fcbadef70465ca2c4c78bc84a" title="Credit the account with a specified amount." alt="" coords="317,55,476,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="242,65,303,65,303,70,242,70"/>
+<area shape="rect" id="Node000006" href="$classBank__account.html#a2757e0c7d34269e0cbc5ed8d6f305c1a" title="Pure virtual function to debit the account by a specified amount." alt="" coords="319,104,474,129"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="240,114,305,114,305,119,240,119"/>
+<area shape="rect" id="Node000008" href="$classClient.html#ae600cde4b0e7c02be20b76fda7f0b7d2" title="Gets the client&#39;s unique identifier." alt="" coords="343,153,451,179"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="258,163,329,163,329,169,258,169"/>
+</map>

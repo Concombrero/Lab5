@@ -1,0 +1,21 @@
+<map id="code/src/main_ex12.cpp" name="code/src/main_ex12.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="19,5,198,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="69,299,149,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,33,38,51,23,64,11,80,8,91,11,103,28,157,51,208,96,286,91,289,46,210,23,159,6,105,3,91,6,78,19,61,35,47,71,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="21,79,95,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="103,33,76,69,72,66,98,29"/>
+<area shape="rect" id="Node000004" href="$bank_8hpp.html" title="Declaration of the Bank class managing a collection of clients." alt="" coords="119,79,202,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="119,29,146,66,142,69,115,33"/>
+<area shape="rect" id="Node000006" href="$client_8hpp.html" title="Declaration of the Client class representing a bank client." alt="" coords="196,152,283,177"/>
+<area shape="poly" id="edge11_Node000001_Node000006" title=" " alt="" coords="144,28,182,47,200,61,216,77,232,107,240,137,234,139,227,109,212,80,197,65,179,52,142,33"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="148,106,128,126,111,153,103,188,100,223,106,285,101,285,95,223,97,187,106,151,123,123,144,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="121,152,171,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="161,105,154,139,149,138,156,104"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="175,102,218,141,215,145,172,106"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="221,180,192,200,161,227,139,258,122,288,117,285,134,255,157,224,188,196,218,175"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="171,225,230,251"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="235,179,216,215,211,212,231,176"/>
+<area shape="rect" id="Node000008" href="$account_8hpp.html" title="Declaration of Bank_account and its derived classes." alt="" coords="254,225,355,251"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="252,176,287,213,283,217,248,179"/>
+<area shape="poly" id="edge10_Node000008_Node000002" title=" " alt="" coords="274,253,154,296,153,291,272,248"/>
+</map>

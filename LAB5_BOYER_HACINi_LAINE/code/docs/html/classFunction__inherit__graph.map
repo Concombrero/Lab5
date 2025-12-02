@@ -1,0 +1,9 @@
+<map id="Function" name="Function">
+<area shape="rect" id="Node000001" title="Abstract base class representing a mathematical function." alt="" coords="79,5,156,31"/>
+<area shape="rect" id="Node000002" href="$classPoly0.html" title="Class representing a polynomial of degree 0." alt="" coords="5,79,64,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,42,50,80,46,76,92,38"/>
+<area shape="rect" id="Node000003" href="$classPoly1.html" title="Class representing a polynomial of degree 1." alt="" coords="88,79,147,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,44,120,79,115,79,115,44"/>
+<area shape="rect" id="Node000004" href="$classPoly2.html" title="Class representing a polynomial of degree 2." alt="" coords="171,79,229,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,38,188,76,185,80,139,42"/>
+</map>

@@ -1,0 +1,142 @@
+\doxysection{Function Class Reference}
+\hypertarget{classFunction}{}\label{classFunction}\index{Function@{Function}}
+
+
+Abstract base class representing a mathematical function.  
+
+
+
+
+{\ttfamily \#include $<$function.\+hpp$>$}
+
+
+
+Inheritance diagram for Function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classFunction__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFunction_ab88fa54dadaf165b9d669c44f5c1e0ed}{Function}} (const std\+::string \&i\+\_\+name)
+\item 
+virtual double \mbox{\hyperlink{classFunction_a32e1cd9a5aeca21070e5b5cb535a8094}{eval}} (double x0)=0
+\begin{DoxyCompactList}\small\item\em Evaluates the function at a given point x0. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classFunction}{Function}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFunction_a950afc777a2934005a2346875599c96a}{derivative}} ()=0
+\begin{DoxyCompactList}\small\item\em Computes the derivative of the function. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFunction_a150b9da26a0cbbbbd41245c4f9de1bf6}{display}} ()=0
+\begin{DoxyCompactList}\small\item\em Displays information about the function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classFunction_a161d1ceb4f67f3222caf429fea7b71f1}{name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class representing a mathematical function. 
+
+This class provides an interface for evaluating functions, computing their derivatives, and displaying information about them. 
+
+Definition at line \mbox{\hyperlink{function_8hpp_source_l00014}{14}} of file \mbox{\hyperlink{function_8hpp_source}{function.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classFunction_ab88fa54dadaf165b9d669c44f5c1e0ed}\label{classFunction_ab88fa54dadaf165b9d669c44f5c1e0ed} 
+\index{Function@{Function}!Function@{Function}}
+\index{Function@{Function}!Function@{Function}}
+\doxysubsubsection{\texorpdfstring{Function()}{Function()}}
+{\footnotesize\ttfamily Function\+::\+Function (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{i\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{function_8hpp_source_l00019}{19}} of file \mbox{\hyperlink{function_8hpp_source}{function.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00019\ :\ \mbox{\hyperlink{classFunction_a161d1ceb4f67f3222caf429fea7b71f1}{name}}(i\_name)\ \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classFunction_a950afc777a2934005a2346875599c96a}\label{classFunction_a950afc777a2934005a2346875599c96a} 
+\index{Function@{Function}!derivative@{derivative}}
+\index{derivative@{derivative}!Function@{Function}}
+\doxysubsubsection{\texorpdfstring{derivative()}{derivative()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classFunction}{Function}} \texorpdfstring{$\ast$}{*} Function\+::derivative (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Computes the derivative of the function. 
+
+This is a pure virtual method that must be implemented by derived classes.
+
+\begin{DoxyReturn}{Returns}
+A pointer to a new \doxylink{classFunction}{Function} object representing the derivative. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classPoly0_a2c6233fa89b447535a20e07301282520}{Poly0}}, \mbox{\hyperlink{classPoly1_ab81d64c94cb7da5ef5473da0e2aacbe8}{Poly1}}, and \mbox{\hyperlink{classPoly2_aa1c1a2a7ce7f83ae447bbbf0e069b13e}{Poly2}}.
+
+\Hypertarget{classFunction_a150b9da26a0cbbbbd41245c4f9de1bf6}\label{classFunction_a150b9da26a0cbbbbd41245c4f9de1bf6} 
+\index{Function@{Function}!display@{display}}
+\index{display@{display}!Function@{Function}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily virtual void Function\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Displays information about the function. 
+
+This is a pure virtual method that must be implemented by derived classes. 
+
+Implemented in \mbox{\hyperlink{classPoly0_a1f332888aeadad3ff8e9fc9fd84dea80}{Poly0}}, \mbox{\hyperlink{classPoly1_adec2ea612c4bda02487a76742bf1ad5c}{Poly1}}, and \mbox{\hyperlink{classPoly2_a9282a1c2bb35d6583965362dd473aef1}{Poly2}}.
+
+\Hypertarget{classFunction_a32e1cd9a5aeca21070e5b5cb535a8094}\label{classFunction_a32e1cd9a5aeca21070e5b5cb535a8094} 
+\index{Function@{Function}!eval@{eval}}
+\index{eval@{eval}!Function@{Function}}
+\doxysubsubsection{\texorpdfstring{eval()}{eval()}}
+{\footnotesize\ttfamily virtual double Function\+::eval (\begin{DoxyParamCaption}\item[{double}]{x0 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Evaluates the function at a given point x0. 
+
+This is a pure virtual method that must be implemented by derived classes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & The x value at which to evaluate the function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the evaluation f(x0) as a double. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classPoly0_a99e5280255a4fefcb0c4d16d8be50ecb}{Poly0}}, \mbox{\hyperlink{classPoly1_ad8527086596b6d58cb248db5c16c1bc6}{Poly1}}, and \mbox{\hyperlink{classPoly2_afaf70d28e167849d23f956eabf1b0900}{Poly2}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classFunction_a161d1ceb4f67f3222caf429fea7b71f1}\label{classFunction_a161d1ceb4f67f3222caf429fea7b71f1} 
+\index{Function@{Function}!name@{name}}
+\index{name@{name}!Function@{Function}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Function\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{function_8hpp_source_l00016}{16}} of file \mbox{\hyperlink{function_8hpp_source}{function.\+hpp}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+code/include/\mbox{\hyperlink{function_8hpp}{function.\+hpp}}\end{DoxyCompactItemize}

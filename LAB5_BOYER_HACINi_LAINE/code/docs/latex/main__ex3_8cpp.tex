@@ -1,0 +1,49 @@
+\doxysection{code/src/main\+\_\+ex3.cpp File Reference}
+\hypertarget{main__ex3_8cpp}{}\label{main__ex3_8cpp}\index{code/src/main\_ex3.cpp@{code/src/main\_ex3.cpp}}
+{\ttfamily \#include "{}function.\+hpp"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for main\+\_\+ex3.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{main__ex3_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main__ex3_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main__ex3_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main__ex3_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main\_ex3.cpp@{main\_ex3.cpp}!main@{main}}
+\index{main@{main}!main\_ex3.cpp@{main\_ex3.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{main__ex3_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{main__ex3_8cpp_source}{main\+\_\+ex3.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00006\ \ \ \ \ std::vector<Function*>\ functions;}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \ \ \ \ functions.push\_back(\textcolor{keyword}{new}\ \mbox{\hyperlink{classPoly0}{Poly0}}(6.0));}
+\DoxyCodeLine{00009\ \ \ \ \ functions.push\_back(\textcolor{keyword}{new}\ \mbox{\hyperlink{classPoly1}{Poly1}}(2.0,\ 5.0));}
+\DoxyCodeLine{00010\ \ \ \ \ functions.push\_back(\textcolor{keyword}{new}\ \mbox{\hyperlink{classPoly2}{Poly2}}(10.0,\ 3.0,\ 2.0));}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{classFunction}{Function}}*\ function\ :\ functions)\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ function-\/>display();}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ x0\ =\ 1;}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}The\ value\ of\ its\ derivative\ at\ point\ x="{}}\ <<\ x0\ <<\ \textcolor{stringliteral}{"{}\ is\ "{}}\ <<\ function-\/>derivative()-\/>eval(x0)\ <<\ std::endl;}
+\DoxyCodeLine{00017\ \ \ \ \ \}}
+\DoxyCodeLine{00018\ \}}
+
+\end{DoxyCode}

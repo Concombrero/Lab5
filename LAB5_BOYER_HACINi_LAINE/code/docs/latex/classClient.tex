@@ -1,0 +1,446 @@
+\doxysection{Client Class Reference}
+\hypertarget{classClient}{}\label{classClient}\index{Client@{Client}}
+
+
+Represents a bank client with multiple bank accounts.  
+
+
+
+
+{\ttfamily \#include $<$client.\+hpp$>$}
+
+
+
+Collaboration diagram for Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{classClient__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classClient_a441b0df2f966d7ef212dbd7ad97f70d7}{Client}} (string \mbox{\hyperlink{classClient_a456e36f9972a8bf3ecdb5f0e70b3bd5d}{name}}, unsigned int \mbox{\hyperlink{classClient_a63200b2a615353b0afcec162dddbc4b9}{identifier}}, size\+\_\+t \mbox{\hyperlink{classClient_a59905eacef3c93514803343a1446db73}{max\+Accounts}})
+\begin{DoxyCompactList}\small\item\em Constructor to initialize a client with name, identifier, and max accounts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classClient_ab74cbe8124ada5342d56030bd608876b}{Client}} (const \mbox{\hyperlink{classClient}{Client}} \&client)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classClient_a840e519ca781888cbd54181572ebe3a7}{\texorpdfstring{$\sim$}{\string~}\+Client}} ()
+\begin{DoxyCompactList}\small\item\em Destructor to clean up allocated resources. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classClient_ae06d3f82a48f3c23fee66c150284ea15}{create\+Account}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new bank account for the client if possible. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classClient_ae600cde4b0e7c02be20b76fda7f0b7d2}{get\+\_\+id}} ()
+\begin{DoxyCompactList}\small\item\em Gets the client\textquotesingle{}s unique identifier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClient_a2cba21dbf2d7223d9233f9a117e640a5}{credit}} (unsigned int idx, double amount)
+\begin{DoxyCompactList}\small\item\em Credits a specified amount to the client\textquotesingle{}s account at the given index. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classClient_aea373e2b310700a294e040a8c52681d1}{debit}} (unsigned int idx, double amount)
+\begin{DoxyCompactList}\small\item\em Debits a specified amount from the client\textquotesingle{}s account at the given index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classClient_a456e36f9972a8bf3ecdb5f0e70b3bd5d}{name}}
+\item 
+unsigned int \mbox{\hyperlink{classClient_a63200b2a615353b0afcec162dddbc4b9}{identifier}}
+\item 
+\mbox{\hyperlink{classBank__account}{Bank\+\_\+account}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classClient_a59905eacef3c93514803343a1446db73}{max\+Accounts}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\+\_\+current\+Accounts}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{classClient_a84126cd2791173dac14dbac668bd8eee}{operator$<$$<$}} (ostream \&o, const \mbox{\hyperlink{classClient}{Client}} \&client)
+\begin{DoxyCompactList}\small\item\em Overloaded output stream operator to print client details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a bank client with multiple bank accounts. 
+
+Definition at line \mbox{\hyperlink{client_8hpp_source_l00020}{20}} of file \mbox{\hyperlink{client_8hpp_source}{client.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classClient_a441b0df2f966d7ef212dbd7ad97f70d7}\label{classClient_a441b0df2f966d7ef212dbd7ad97f70d7} 
+\index{Client@{Client}!Client@{Client}}
+\index{Client@{Client}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{Client()}{Client()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Client\+::\+Client (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{unsigned int}]{identifier,  }\item[{size\+\_\+t}]{max\+Accounts }\end{DoxyParamCaption})}
+
+
+
+Constructor to initialize a client with name, identifier, and max accounts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The client\textquotesingle{}s name. \\
+\hline
+{\em identifier} & The unique identifier for the client. \\
+\hline
+{\em max\+Accounts} & The maximum number of accounts the client can have. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{client_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{client_8cpp_source}{client.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ this-\/>\mbox{\hyperlink{classClient_a456e36f9972a8bf3ecdb5f0e70b3bd5d}{name}}\ =\ \mbox{\hyperlink{classClient_a456e36f9972a8bf3ecdb5f0e70b3bd5d}{name}};}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ this-\/>\mbox{\hyperlink{classClient_a63200b2a615353b0afcec162dddbc4b9}{identifier}}\ =\ \mbox{\hyperlink{classClient_a63200b2a615353b0afcec162dddbc4b9}{identifier}};}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ this-\/>\mbox{\hyperlink{classClient_a59905eacef3c93514803343a1446db73}{maxAccounts}}\ =\ \mbox{\hyperlink{classClient_a59905eacef3c93514803343a1446db73}{maxAccounts}};}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}}\ =\ 0;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classBank__account}{Bank\_account}}*[\mbox{\hyperlink{classClient_a59905eacef3c93514803343a1446db73}{maxAccounts}}];}
+\DoxyCodeLine{00016\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classClient_ab74cbe8124ada5342d56030bd608876b}\label{classClient_ab74cbe8124ada5342d56030bd608876b} 
+\index{Client@{Client}!Client@{Client}}
+\index{Client@{Client}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{Client()}{Client()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Client\+::\+Client (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classClient}{Client}} \&}]{client }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & The client to copy from. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{client_8cpp_source_l00018}{18}} of file \mbox{\hyperlink{client_8cpp_source}{client.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{classClient_a456e36f9972a8bf3ecdb5f0e70b3bd5d}{name}}\ =\ client.\mbox{\hyperlink{classClient_a456e36f9972a8bf3ecdb5f0e70b3bd5d}{name}};}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{classClient_a63200b2a615353b0afcec162dddbc4b9}{identifier}}\ =\ client.\mbox{\hyperlink{classClient_a63200b2a615353b0afcec162dddbc4b9}{identifier}};}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{classClient_a59905eacef3c93514803343a1446db73}{maxAccounts}}\ =\ client.\mbox{\hyperlink{classClient_a59905eacef3c93514803343a1446db73}{maxAccounts}};}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}}\ =\ client.\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classBank__account}{Bank\_account}}*[client.\mbox{\hyperlink{classClient_a59905eacef3c93514803343a1446db73}{maxAccounts}}];}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ client.\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}};\ i++)\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}[i]\ =\ client.\mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}[i];}
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+\DoxyCodeLine{00028\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classClient_a840e519ca781888cbd54181572ebe3a7}\label{classClient_a840e519ca781888cbd54181572ebe3a7} 
+\index{Client@{Client}!````~Client@{\texorpdfstring{$\sim$}{\string~}Client}}
+\index{````~Client@{\texorpdfstring{$\sim$}{\string~}Client}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Client()}{\string~Client()}}
+{\footnotesize\ttfamily Client\+::\texorpdfstring{$\sim$}{\string~}\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor to clean up allocated resources. 
+
+
+
+Definition at line \mbox{\hyperlink{client_8cpp_source_l00030}{30}} of file \mbox{\hyperlink{client_8cpp_source}{client.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ \mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}};\ i++)\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}[i];}
+\DoxyCodeLine{00033\ \ \ \ \ \}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{delete}\ []\ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}};}
+\DoxyCodeLine{00035\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classClient_ae06d3f82a48f3c23fee66c150284ea15}\label{classClient_ae06d3f82a48f3c23fee66c150284ea15} 
+\index{Client@{Client}!createAccount@{createAccount}}
+\index{createAccount@{createAccount}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{createAccount()}{createAccount()}}
+{\footnotesize\ttfamily bool Client\+::create\+Account (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a new bank account for the client if possible. 
+
+\begin{DoxyReturn}{Returns}
+True if the account was created successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{client_8cpp_source_l00051}{51}} of file \mbox{\hyperlink{client_8cpp_source}{client.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}}\ >=\ \mbox{\hyperlink{classClient_a59905eacef3c93514803343a1446db73}{maxAccounts}})\{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Maximum\ number\ of\ accounts\ reached."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Creation\ of\ a\ current\ account\ (1),\ unblocked\ savings\ account\ (2),\ or\ blocked\ savings\ account\ (3)?"{}}\ <<\ endl;}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{int}\ choice;}
+\DoxyCodeLine{00058\ \ \ \ \ std::cin\ >>\ choice;}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordflow}{switch}(choice)\{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 1:}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}[\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}}]\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classCurrent__account}{Current\_account}}(\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}},\ 0);}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}}++;}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 2:}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}[\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}}]\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classUnblocked__account}{Unblocked\_account}}(\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}},\ 0);}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}}++;}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 3:}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}[\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}}]\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classBlocked__account}{Blocked\_account}}(\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}},\ 0);}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}}++;}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ choice."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00076\ \ \ \ \ \}}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00078\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{classClient_ae06d3f82a48f3c23fee66c150284ea15_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classClient_a2cba21dbf2d7223d9233f9a117e640a5}\label{classClient_a2cba21dbf2d7223d9233f9a117e640a5} 
+\index{Client@{Client}!credit@{credit}}
+\index{credit@{credit}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{credit()}{credit()}}
+{\footnotesize\ttfamily void Client\+::credit (\begin{DoxyParamCaption}\item[{unsigned int}]{idx,  }\item[{double}]{amount }\end{DoxyParamCaption})}
+
+
+
+Credits a specified amount to the client\textquotesingle{}s account at the given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & The index of the account to credit. \\
+\hline
+{\em amount} & The amount to credit. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{client_8cpp_source_l00037}{37}} of file \mbox{\hyperlink{client_8cpp_source}{client.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordflow}{if}(idx\ >=\ \mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}})\{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ account\ index."{}}\ <<\ endl;}
+\DoxyCodeLine{00040\ \ \ \ \ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}[idx]-\/>\mbox{\hyperlink{classBank__account_aa901564fcbadef70465ca2c4c78bc84a}{credit}}(amount);}
+\DoxyCodeLine{00042\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{classClient_a2cba21dbf2d7223d9233f9a117e640a5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classClient_a2cba21dbf2d7223d9233f9a117e640a5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classClient_aea373e2b310700a294e040a8c52681d1}\label{classClient_aea373e2b310700a294e040a8c52681d1} 
+\index{Client@{Client}!debit@{debit}}
+\index{debit@{debit}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{debit()}{debit()}}
+{\footnotesize\ttfamily double Client\+::debit (\begin{DoxyParamCaption}\item[{unsigned int}]{idx,  }\item[{double}]{amount }\end{DoxyParamCaption})}
+
+
+
+Debits a specified amount from the client\textquotesingle{}s account at the given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & The index of the account to debit. \\
+\hline
+{\em amount} & The amount to debit. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The amount debited. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{client_8cpp_source_l00044}{44}} of file \mbox{\hyperlink{client_8cpp_source}{client.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordflow}{if}(idx\ >=\ \mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}})\{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ account\ index."{}}\ <<\ endl;}
+\DoxyCodeLine{00047\ \ \ \ \ \}}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}[idx]-\/>\mbox{\hyperlink{classBank__account_a2757e0c7d34269e0cbc5ed8d6f305c1a}{debit}}(amount);}
+\DoxyCodeLine{00049\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classClient_aea373e2b310700a294e040a8c52681d1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{classClient_aea373e2b310700a294e040a8c52681d1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classClient_ae600cde4b0e7c02be20b76fda7f0b7d2}\label{classClient_ae600cde4b0e7c02be20b76fda7f0b7d2} 
+\index{Client@{Client}!get\_id@{get\_id}}
+\index{get\_id@{get\_id}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{get\_id()}{get\_id()}}
+{\footnotesize\ttfamily unsigned int Client\+::get\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the client\textquotesingle{}s unique identifier. 
+
+\begin{DoxyReturn}{Returns}
+The client\textquotesingle{}s identifier. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{client_8cpp_source_l00080}{80}} of file \mbox{\hyperlink{client_8cpp_source}{client.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classClient_a63200b2a615353b0afcec162dddbc4b9}{identifier}};}
+\DoxyCodeLine{00082\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClient_ae600cde4b0e7c02be20b76fda7f0b7d2_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classClient_a84126cd2791173dac14dbac668bd8eee}\label{classClient_a84126cd2791173dac14dbac668bd8eee} 
+\index{Client@{Client}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{o,  }\item[{const \mbox{\hyperlink{classClient}{Client}} \&}]{client }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overloaded output stream operator to print client details. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & The output stream. \\
+\hline
+{\em client} & The client to print. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output stream. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{client_8cpp_source_l00085}{85}} of file \mbox{\hyperlink{client_8cpp_source}{client.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00086\ \ \ \ \ o\ <<\ \textcolor{stringliteral}{"{}Client\ name:\ "{}}\ <<\ client.\mbox{\hyperlink{classClient_a456e36f9972a8bf3ecdb5f0e70b3bd5d}{name}}\ <<\ \textcolor{stringliteral}{"{}\ and\ id\ =\ "{}}\ <<\ client.\mbox{\hyperlink{classClient_a63200b2a615353b0afcec162dddbc4b9}{identifier}}\ <<\ \textcolor{stringliteral}{"{}\ and\ his\ /\ her\ accounts\ :"{}}\ <<\ endl;}
+\DoxyCodeLine{00087\ \ \ \ \ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ client.\mbox{\hyperlink{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}{nb\_currentAccounts}};\ i++)\ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ o\ <<\ *(client.\mbox{\hyperlink{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}{accounts}}[i])\ <<\ endl;}
+\DoxyCodeLine{00090\ \ \ \ \ \}}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordflow}{return}\ o;}
+\DoxyCodeLine{00092\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classClient_a811ed3995e3c0a223f64f3945e6b8ad9}\label{classClient_a811ed3995e3c0a223f64f3945e6b8ad9} 
+\index{Client@{Client}!accounts@{accounts}}
+\index{accounts@{accounts}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{accounts}{accounts}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBank__account}{Bank\+\_\+account}}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Client\+::accounts\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{client_8hpp_source_l00025}{25}} of file \mbox{\hyperlink{client_8hpp_source}{client.\+hpp}}.
+
+\Hypertarget{classClient_a63200b2a615353b0afcec162dddbc4b9}\label{classClient_a63200b2a615353b0afcec162dddbc4b9} 
+\index{Client@{Client}!identifier@{identifier}}
+\index{identifier@{identifier}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{identifier}{identifier}}
+{\footnotesize\ttfamily unsigned int Client\+::identifier\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{client_8hpp_source_l00023}{23}} of file \mbox{\hyperlink{client_8hpp_source}{client.\+hpp}}.
+
+\Hypertarget{classClient_a59905eacef3c93514803343a1446db73}\label{classClient_a59905eacef3c93514803343a1446db73} 
+\index{Client@{Client}!maxAccounts@{maxAccounts}}
+\index{maxAccounts@{maxAccounts}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{maxAccounts}{maxAccounts}}
+{\footnotesize\ttfamily size\+\_\+t Client\+::max\+Accounts\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{client_8hpp_source_l00026}{26}} of file \mbox{\hyperlink{client_8hpp_source}{client.\+hpp}}.
+
+\Hypertarget{classClient_a456e36f9972a8bf3ecdb5f0e70b3bd5d}\label{classClient_a456e36f9972a8bf3ecdb5f0e70b3bd5d} 
+\index{Client@{Client}!name@{name}}
+\index{name@{name}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string Client\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{client_8hpp_source_l00022}{22}} of file \mbox{\hyperlink{client_8hpp_source}{client.\+hpp}}.
+
+\Hypertarget{classClient_acfa1a3e58d0c5599de8c961b5827a9e6}\label{classClient_acfa1a3e58d0c5599de8c961b5827a9e6} 
+\index{Client@{Client}!nb\_currentAccounts@{nb\_currentAccounts}}
+\index{nb\_currentAccounts@{nb\_currentAccounts}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{nb\_currentAccounts}{nb\_currentAccounts}}
+{\footnotesize\ttfamily size\+\_\+t Client\+::nb\+\_\+current\+Accounts\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{client_8hpp_source_l00027}{27}} of file \mbox{\hyperlink{client_8hpp_source}{client.\+hpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+code/include/\mbox{\hyperlink{client_8hpp}{client.\+hpp}}\item 
+code/src/\mbox{\hyperlink{client_8cpp}{client.\+cpp}}\end{DoxyCompactItemize}

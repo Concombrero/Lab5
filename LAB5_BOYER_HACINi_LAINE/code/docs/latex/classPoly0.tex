@@ -1,0 +1,197 @@
+\doxysection{Poly0 Class Reference}
+\hypertarget{classPoly0}{}\label{classPoly0}\index{Poly0@{Poly0}}
+
+
+Class representing a polynomial of degree 0.  
+
+
+
+
+{\ttfamily \#include $<$function.\+hpp$>$}
+
+
+
+Inheritance diagram for Poly0\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classPoly0__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Poly0\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classPoly0__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoly0_a82a188766db841a3303be6de9cebcdcc}{Poly0}} (double i\+\_\+k0)
+\item 
+double \mbox{\hyperlink{classPoly0_a99e5280255a4fefcb0c4d16d8be50ecb}{eval}} (double x0) override
+\begin{DoxyCompactList}\small\item\em Evaluates the function at a given point x0. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFunction}{Function}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classPoly0_a2c6233fa89b447535a20e07301282520}{derivative}} () override
+\begin{DoxyCompactList}\small\item\em Computes the derivative of the function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoly0_a1f332888aeadad3ff8e9fc9fd84dea80}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays information about the function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFunction}{Function}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFunction_ab88fa54dadaf165b9d669c44f5c1e0ed}{Function}} (const std\+::string \&i\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classPoly0_ae74022b4f0c2c2e8815df872df3e161b}{k0}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classFunction}{Function}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classFunction_a161d1ceb4f67f3222caf429fea7b71f1}{name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a polynomial of degree 0. 
+
+This class inherits from \doxylink{classFunction}{Function} and represents a constant function of the form p(x) = k0. 
+
+Definition at line \mbox{\hyperlink{function_8hpp_source_l00060}{60}} of file \mbox{\hyperlink{function_8hpp_source}{function.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classPoly0_a82a188766db841a3303be6de9cebcdcc}\label{classPoly0_a82a188766db841a3303be6de9cebcdcc} 
+\index{Poly0@{Poly0}!Poly0@{Poly0}}
+\index{Poly0@{Poly0}!Poly0@{Poly0}}
+\doxysubsubsection{\texorpdfstring{Poly0()}{Poly0()}}
+{\footnotesize\ttfamily Poly0\+::\+Poly0 (\begin{DoxyParamCaption}\item[{double}]{i\+\_\+k0 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{function_8hpp_source_l00065}{65}} of file \mbox{\hyperlink{function_8hpp_source}{function.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00065\ :\ \mbox{\hyperlink{classFunction}{Function}}(\textcolor{stringliteral}{"{}Poly0"{}}),\ \mbox{\hyperlink{classPoly0_ae74022b4f0c2c2e8815df872df3e161b}{k0}}(i\_k0)\ \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPoly0_a2c6233fa89b447535a20e07301282520}\label{classPoly0_a2c6233fa89b447535a20e07301282520} 
+\index{Poly0@{Poly0}!derivative@{derivative}}
+\index{derivative@{derivative}!Poly0@{Poly0}}
+\doxysubsubsection{\texorpdfstring{derivative()}{derivative()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFunction}{Function}} \texorpdfstring{$\ast$}{*} Poly0\+::derivative (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Computes the derivative of the function. 
+
+This is a pure virtual method that must be implemented by derived classes.
+
+\begin{DoxyReturn}{Returns}
+A pointer to a new \doxylink{classFunction}{Function} object representing the derivative. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classFunction_a950afc777a2934005a2346875599c96a}{Function}}.
+
+
+
+Definition at line \mbox{\hyperlink{function_8hpp_source_l00071}{71}} of file \mbox{\hyperlink{function_8hpp_source}{function.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classPoly0}{Poly0}}(0.0);}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classPoly0_a1f332888aeadad3ff8e9fc9fd84dea80}\label{classPoly0_a1f332888aeadad3ff8e9fc9fd84dea80} 
+\index{Poly0@{Poly0}!display@{display}}
+\index{display@{display}!Poly0@{Poly0}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Poly0\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays information about the function. 
+
+This is a pure virtual method that must be implemented by derived classes. 
+
+Implements \mbox{\hyperlink{classFunction_a150b9da26a0cbbbbd41245c4f9de1bf6}{Function}}.
+
+
+
+Definition at line \mbox{\hyperlink{function_8hpp_source_l00075}{75}} of file \mbox{\hyperlink{function_8hpp_source}{function.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}This\ function\ is\ a\ Polynomial\ of\ degree\ 0."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}p(x)\ =\ "{}}\ <<\ \mbox{\hyperlink{classPoly0_ae74022b4f0c2c2e8815df872df3e161b}{k0}}\ <<\ std::endl;}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classPoly0_a99e5280255a4fefcb0c4d16d8be50ecb}\label{classPoly0_a99e5280255a4fefcb0c4d16d8be50ecb} 
+\index{Poly0@{Poly0}!eval@{eval}}
+\index{eval@{eval}!Poly0@{Poly0}}
+\doxysubsubsection{\texorpdfstring{eval()}{eval()}}
+{\footnotesize\ttfamily double Poly0\+::eval (\begin{DoxyParamCaption}\item[{double}]{x0 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Evaluates the function at a given point x0. 
+
+This is a pure virtual method that must be implemented by derived classes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & The x value at which to evaluate the function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the evaluation f(x0) as a double. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classFunction_a32e1cd9a5aeca21070e5b5cb535a8094}{Function}}.
+
+
+
+Definition at line \mbox{\hyperlink{function_8hpp_source_l00067}{67}} of file \mbox{\hyperlink{function_8hpp_source}{function.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPoly0_ae74022b4f0c2c2e8815df872df3e161b}{k0}};}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classPoly0_ae74022b4f0c2c2e8815df872df3e161b}\label{classPoly0_ae74022b4f0c2c2e8815df872df3e161b} 
+\index{Poly0@{Poly0}!k0@{k0}}
+\index{k0@{k0}!Poly0@{Poly0}}
+\doxysubsubsection{\texorpdfstring{k0}{k0}}
+{\footnotesize\ttfamily double Poly0\+::k0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{function_8hpp_source_l00062}{62}} of file \mbox{\hyperlink{function_8hpp_source}{function.\+hpp}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+code/include/\mbox{\hyperlink{function_8hpp}{function.\+hpp}}\end{DoxyCompactItemize}

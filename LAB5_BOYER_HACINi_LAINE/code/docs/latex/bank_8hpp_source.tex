@@ -1,0 +1,29 @@
+\doxysection{bank.\+hpp}
+\hypertarget{bank_8hpp_source}{}\label{bank_8hpp_source}\index{code/include/bank.hpp@{code/include/bank.hpp}}
+\mbox{\hyperlink{bank_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00006}00006\ \textcolor{preprocessor}{\#ifndef\ BANK\_HPP}}
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00007}00007\ \textcolor{preprocessor}{\#define\ BANK\_HPP}}
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00010}00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{client_8hpp}{client.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00014}00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00020}\mbox{\hyperlink{classBank}{00020}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classBank}{Bank}}\ \{}
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00021}00021\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00022}\mbox{\hyperlink{classBank_ac6bcfb2d1d3eeb811d885d6e21c478c3}{00022}}\ \ \ \ \ \ \ \ \ map<unsigned\ int,\ Client*>\ \mbox{\hyperlink{classBank_ac6bcfb2d1d3eeb811d885d6e21c478c3}{clients\_collection}};\ \textcolor{comment}{//\ Maps\ client\ identifiers\ to\ Client\ pointers}}
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00023}00023\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00027}00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBank_a95972e189e85e1a572348811a8bf0d57}{Bank}}();}
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00032}00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBank_a1fd6ab6aba6e9b5378aec019bcb79738}{insertClient}}(\mbox{\hyperlink{classClient}{Client}}\&\ client);}
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00039}00039\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ ostream\&\ \mbox{\hyperlink{classBank_aa4f22d51b6c552b2a8b69497c8d3b39d}{operator<<}}(ostream\&\ o,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classBank}{Bank}}\&\ bank);}
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00040}00040\ \};}
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{bank_8hpp_source_l00042}00042\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

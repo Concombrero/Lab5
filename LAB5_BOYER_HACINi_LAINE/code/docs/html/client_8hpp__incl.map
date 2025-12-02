@@ -1,0 +1,10 @@
+<map id="code/include/client.hpp" name="code/include/client.hpp">
+<area shape="rect" id="Node000001" title="Declaration of the Client class representing a bank client." alt="" coords="5,5,177,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="70,152,150,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,33,56,65,50,84,53,103,66,124,83,141,79,145,61,127,47,105,45,83,52,62,76,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="62,79,121,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="94,31,94,65,89,65,89,31"/>
+<area shape="rect" id="Node000004" href="$account_8hpp.html" title="Declaration of Bank_account and its derived classes." alt="" coords="145,79,246,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="110,28,168,68,165,73,107,33"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="183,106,136,145,133,141,180,102"/>
+</map>

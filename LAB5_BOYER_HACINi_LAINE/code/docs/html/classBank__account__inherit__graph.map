@@ -1,0 +1,11 @@
+<map id="Bank_account" name="Bank_account">
+<area shape="rect" id="Node000001" title="Abstract base class representing a bank account." alt="" coords="87,5,201,31"/>
+<area shape="rect" id="Node000002" href="$classCurrent__account.html" title="Class representing a current bank account." alt="" coords="5,79,133,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,42,83,80,80,77,120,38"/>
+<area shape="rect" id="Node000003" href="$classSaving__account.html" title="Class representing a saving bank account." alt="" coords="158,79,282,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="168,38,209,76,206,80,164,42"/>
+<area shape="rect" id="Node000004" href="$classBlocked__account.html" title="Class representing a blocked saving bank account." alt="" coords="72,152,203,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="198,115,153,154,149,150,195,111"/>
+<area shape="rect" id="Node000005" href="$classUnblocked__account.html" title="Class representing an unblocked saving bank account." alt="" coords="227,152,375,177"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="245,111,290,150,286,154,242,115"/>
+</map>

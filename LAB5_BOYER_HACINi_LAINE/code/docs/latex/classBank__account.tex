@@ -1,0 +1,242 @@
+\doxysection{Bank\+\_\+account Class Reference}
+\hypertarget{classBank__account}{}\label{classBank__account}\index{Bank\_account@{Bank\_account}}
+
+
+Abstract base class representing a bank account.  
+
+
+
+
+{\ttfamily \#include $<$account.\+hpp$>$}
+
+
+
+Inheritance diagram for Bank\+\_\+account\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBank__account__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBank__account_ad151d7994c3fdb21dd6a81e2b697912a}{Bank\+\_\+account}} (unsigned int \mbox{\hyperlink{classBank__account_a96f32420eba2642a1be581e5d1c50c8e}{bank\+\_\+id}}, double \mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}})
+\begin{DoxyCompactList}\small\item\em Constructor to initialize bank account with ID and balance. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classBank__account_a089a477786f87159c92d807d19b2cc1e}{\texorpdfstring{$\sim$}{\string~}\+Bank\+\_\+account}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBank__account_aa901564fcbadef70465ca2c4c78bc84a}{credit}} (double amount)
+\begin{DoxyCompactList}\small\item\em Credit the account with a specified amount. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classBank__account_a2757e0c7d34269e0cbc5ed8d6f305c1a}{debit}} (double amount)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to debit the account by a specified amount. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classBank__account_ac4a3fb416a9f822b0a137e081c13de7d}{operator()}} () const
+\begin{DoxyCompactList}\small\item\em \doxylink{classFunction}{Function} call operator to get the bank ID. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBank__account_afb2496d0e43faad848d1c73ea1fd709c}{print}} (ostream \&o) const =0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to print account details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{classBank__account_a96f32420eba2642a1be581e5d1c50c8e}{bank\+\_\+id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class representing a bank account. 
+
+Definition at line \mbox{\hyperlink{account_8hpp_source_l00019}{19}} of file \mbox{\hyperlink{account_8hpp_source}{account.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classBank__account_ad151d7994c3fdb21dd6a81e2b697912a}\label{classBank__account_ad151d7994c3fdb21dd6a81e2b697912a} 
+\index{Bank\_account@{Bank\_account}!Bank\_account@{Bank\_account}}
+\index{Bank\_account@{Bank\_account}!Bank\_account@{Bank\_account}}
+\doxysubsubsection{\texorpdfstring{Bank\_account()}{Bank\_account()}}
+{\footnotesize\ttfamily Bank\+\_\+account\+::\+Bank\+\_\+account (\begin{DoxyParamCaption}\item[{unsigned int}]{bank\+\_\+id,  }\item[{double}]{balance }\end{DoxyParamCaption})}
+
+
+
+Constructor to initialize bank account with ID and balance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bank\+\_\+id} & The unique identifier for the bank account. \\
+\hline
+{\em balance} & The initial balance of the account. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{account_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{account_8cpp_source}{account.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00010\ \ \ \ \ this-\/>\mbox{\hyperlink{classBank__account_a96f32420eba2642a1be581e5d1c50c8e}{bank\_id}}\ =\ \mbox{\hyperlink{classBank__account_a96f32420eba2642a1be581e5d1c50c8e}{bank\_id}};}
+\DoxyCodeLine{00011\ \ \ \ \ this-\/>\mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}}\ =\ \mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}};}
+\DoxyCodeLine{00012\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classBank__account_a089a477786f87159c92d807d19b2cc1e}\label{classBank__account_a089a477786f87159c92d807d19b2cc1e} 
+\index{Bank\_account@{Bank\_account}!````~Bank\_account@{\texorpdfstring{$\sim$}{\string~}Bank\_account}}
+\index{````~Bank\_account@{\texorpdfstring{$\sim$}{\string~}Bank\_account}!Bank\_account@{Bank\_account}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Bank\_account()}{\string~Bank\_account()}}
+{\footnotesize\ttfamily virtual Bank\+\_\+account\+::\texorpdfstring{$\sim$}{\string~}\+Bank\+\_\+account (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Virtual destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classBank__account_aa901564fcbadef70465ca2c4c78bc84a}\label{classBank__account_aa901564fcbadef70465ca2c4c78bc84a} 
+\index{Bank\_account@{Bank\_account}!credit@{credit}}
+\index{credit@{credit}!Bank\_account@{Bank\_account}}
+\doxysubsubsection{\texorpdfstring{credit()}{credit()}}
+{\footnotesize\ttfamily void Bank\+\_\+account\+::credit (\begin{DoxyParamCaption}\item[{double}]{amount }\end{DoxyParamCaption})}
+
+
+
+Credit the account with a specified amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to credit. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{account_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{account_8cpp_source}{account.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{classBank__account_ac936d713ef606f2978a73ce32034771c}{balance}}\ +=\ amount;}
+\DoxyCodeLine{00016\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBank__account_aa901564fcbadef70465ca2c4c78bc84a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classBank__account_a2757e0c7d34269e0cbc5ed8d6f305c1a}\label{classBank__account_a2757e0c7d34269e0cbc5ed8d6f305c1a} 
+\index{Bank\_account@{Bank\_account}!debit@{debit}}
+\index{debit@{debit}!Bank\_account@{Bank\_account}}
+\doxysubsubsection{\texorpdfstring{debit()}{debit()}}
+{\footnotesize\ttfamily virtual double Bank\+\_\+account\+::debit (\begin{DoxyParamCaption}\item[{double}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function to debit the account by a specified amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to debit. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The actual debited amount. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCurrent__account_a32befcf808713fce579986ec43c869d1}{Current\+\_\+account}}, \mbox{\hyperlink{classBlocked__account_a59a054acccb82c9536b4a0c988ee72e7}{Blocked\+\_\+account}}, and \mbox{\hyperlink{classUnblocked__account_af56458c1d82ff26345d137bf07119b7f}{Unblocked\+\_\+account}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBank__account_a2757e0c7d34269e0cbc5ed8d6f305c1a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classBank__account_ac4a3fb416a9f822b0a137e081c13de7d}\label{classBank__account_ac4a3fb416a9f822b0a137e081c13de7d} 
+\index{Bank\_account@{Bank\_account}!operator()@{operator()}}
+\index{operator()@{operator()}!Bank\_account@{Bank\_account}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily unsigned int Bank\+\_\+account\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\doxylink{classFunction}{Function} call operator to get the bank ID. 
+
+\begin{DoxyReturn}{Returns}
+The bank ID. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{account_8cpp_source_l00018}{18}} of file \mbox{\hyperlink{account_8cpp_source}{account.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classBank__account_a96f32420eba2642a1be581e5d1c50c8e}{bank\_id}};}
+\DoxyCodeLine{00020\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classBank__account_afb2496d0e43faad848d1c73ea1fd709c}\label{classBank__account_afb2496d0e43faad848d1c73ea1fd709c} 
+\index{Bank\_account@{Bank\_account}!print@{print}}
+\index{print@{print}!Bank\_account@{Bank\_account}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily virtual void Bank\+\_\+account\+::print (\begin{DoxyParamCaption}\item[{ostream \&}]{o }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function to print account details. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & The output stream. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classCurrent__account_ab211e66af8b5bb9cb3a8c6c2f3e6a4b9}{Current\+\_\+account}}, and \mbox{\hyperlink{classSaving__account_ae674ec68bba9e00a1ff8970569f6502e}{Saving\+\_\+account}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classBank__account_afb2496d0e43faad848d1c73ea1fd709c_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classBank__account_ac936d713ef606f2978a73ce32034771c}\label{classBank__account_ac936d713ef606f2978a73ce32034771c} 
+\index{Bank\_account@{Bank\_account}!balance@{balance}}
+\index{balance@{balance}!Bank\_account@{Bank\_account}}
+\doxysubsubsection{\texorpdfstring{balance}{balance}}
+{\footnotesize\ttfamily double Bank\+\_\+account\+::balance\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{account_8hpp_source_l00023}{23}} of file \mbox{\hyperlink{account_8hpp_source}{account.\+hpp}}.
+
+\Hypertarget{classBank__account_a96f32420eba2642a1be581e5d1c50c8e}\label{classBank__account_a96f32420eba2642a1be581e5d1c50c8e} 
+\index{Bank\_account@{Bank\_account}!bank\_id@{bank\_id}}
+\index{bank\_id@{bank\_id}!Bank\_account@{Bank\_account}}
+\doxysubsubsection{\texorpdfstring{bank\_id}{bank\_id}}
+{\footnotesize\ttfamily unsigned int Bank\+\_\+account\+::bank\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{account_8hpp_source_l00021}{21}} of file \mbox{\hyperlink{account_8hpp_source}{account.\+hpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+code/include/\mbox{\hyperlink{account_8hpp}{account.\+hpp}}\item 
+code/src/\mbox{\hyperlink{account_8cpp}{account.\+cpp}}\end{DoxyCompactItemize}
