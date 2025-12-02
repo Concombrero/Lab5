@@ -8,9 +8,9 @@
     short-title: [Lab worksheet \#5],
     authors: (
       (name: "Hacini Malik"),
-      (name: "Boyer Tim"),
+      (name: "Boyer Timothé"),
       (name: "Lainé Martin")),
-    author: "Hacini Malik, Boyer Tim, Lainé Martin",
+    author: "Hacini Malik, Boyer Timothé, Lainé Martin",
     date: "November 2025",
   ),
   config-common(
@@ -42,8 +42,8 @@
 
 *Contributions*:
 - Exercise 1: Martin
-- Exercise 2: Martin & Timothée
-- Exercise 3: Timothée
+- Exercise 2: Martin & Malik
+- Exercise 3: Timothé
 
 #nb[Doxygen documentation for the lab can be generated with the following commands: 
 - `sudo apt update` (if necessary)
